@@ -15,7 +15,8 @@
 
 </head>
 
-<body>
+<body id="body" class="bg-transparent">
+
     <!-- Bienvenidos! -->
     <!-- TO DO:     - Hacer que aparezca un alert y te indique que número de visitante sos. 
                     - Utilizar la UI que corresponde de otro ejemplo.
@@ -55,8 +56,8 @@
                                 Elegir tema
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Sailor Day</a>
-                                <a class="dropdown-item" href="#">Sailor Night</a>
+                                <a class="dropdown-item" onclick="modifyThemeSailorDay()">Sailor Day</a>
+                                <a class="dropdown-item" onclick="modifyThemeDark()">Sailor Night</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -579,15 +580,15 @@
     <!-- This page JavaScript -->
     <script>
         // Carousel id="sliderSujerencia"
-        $('.carousel').carousel({
+        $.('.carousel').carousel({
             interval: 500,
             keyboard: true,
-            pause: 'hover'
+            pause: 'hover',
         });
     </script>
 
     <!-- Autor JavaScript -->
-    <script src="js/jp.js"></script>
+    <script src="js/theme.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
