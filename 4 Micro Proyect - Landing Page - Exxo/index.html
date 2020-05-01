@@ -15,7 +15,6 @@
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/media-queries.css">
 
@@ -32,56 +31,9 @@
 			<span class="sr-only">Loading...</span>
 		</div>
 
-		<!-- Nabvar menu -->
-		<nav class="navbar navbar-dark fixed-top" style="background-color: blueviolet;">
-			<div id="menu_bg" class="container">
-				<a class="navbar-brand" href="index.html"></a>
-
-				<button id="burger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-
-				<!-- Menu inside -->
-				<div class="collapse navbar-collapse" id="navbarNav">
-
-					<!-- Left Menu -->
-					<div class="left">
-						<div class="contact">
-							Headquarters
-							<div class="address">
-								<p>Málaga, España<br>
-									Av. Isabel Manoja 35<br>
-									29620</p>
-							</div>
-						</div>
-
-						<div class="social">
-							Find us on
-							<a target="_blank" href="#">Behance</a>
-							<a target="_blank" href="#">Instagram</a>
-							<a target="_blank" href="#">Facebook</a>
-						</div>
-
-					</div>
-
-					<!-- Right inside -->
-					<div class="right">
-						<div class="menu-main-menu-container">
-							<ul id="menu-main-menu" class="menu">
-								<li>
-									<p><a href="quote.html">quote</a></p>
-								</li>
-								<li><a href="contact.html">contact us</a></li>
-							</ul>
-						</div>
-					</div>
-				</div><!-- End Menu inside -->
-
-			</div>
-		</nav><!-- End Top menu -->
+		<!-- Navigation bar (navigation.html)-->
+		<div id="nav-placeholder">
+		</div>
 
 		<!-- Main -->
 		<div id="main">
@@ -112,58 +64,26 @@
 
 	</div> <!-- end top content -->
 
-	<footer>
+	<!-- Footer (footer.html)-->
+	<div id="loadfooter">
+	</div>
 
-		<div class="col">
-
-			<div class="menu">
-				<div>
-					<div class="textwidget">
-						<p>we work <a href="...">with</a></p>
-						<p>Just <a href="contact.html">say hello!</a></p>
-					</div>
-				</div>
-			</div>
-
-			<div class="contact">
-				<div class="email">
-					<a class="color_trans" href="mailto:sales@exxo.es">sales@exxo.es</a>
-				</div>
-				<div class="postal">
-					<span class="thin">Headquarters</span>
-					<div class="address">
-						<p>Málaga, España<br>
-							Av. Isabel Manoja 35<br>
-							29620</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="social">
-				<span class="thin">Find us</span>
-				<a class="color_trans" target="_blank" href="pdf/VIES.pdf">our VAT code</a>
-				<a class="color_trans" target="_blank" href="#">Instagram</a>
-				<a class="color_trans" target="_blank" href="#">Facebook</a>
-			</div>
-
-			<div class="full_logo color_trans">
-				Exxo Europa SL
-				<div class="cross_over bg_color_trans"></div>
-			</div>
-
-
-			<div class="services">
-			</div>
-
-		</div>
-
-	</footer>
-
-
-
-	<!-- Javascript -->
+	<!-- =================
+		       Javascript 
+       ================= -->
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+
+	<!-- Load Navigation.html and footer.html-->
+	<script>
+		$.get("navigation.html", function (data) {
+			$("#nav-placeholder").replaceWith(data);
+		});
+		$.get("footer.html", function (data) {
+			$("#loadfooter").replaceWith(data);
+		});
+	</script>
+
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
 		crossorigin="anonymous"></script>
