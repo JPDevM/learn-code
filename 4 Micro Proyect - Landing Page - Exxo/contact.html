@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>Bootstrap Hamburger Menu</title>
+	<title>Exxo</title>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="assets/css/media-queries.css">
 
 	<!-- Favicon -->
-
+	<link rel="shortcut icon" type="image/png" href="assets/img/ico/favicon.png">
 
 </head>
 
@@ -33,61 +33,101 @@
 		</div>
 
 		<!-- Top menu -->
-		<nav class="navbar navbar-dark fixed-top">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">Bootstrap Hamburger Menu</a>
+		<nav class="navbar navbar-dark fixed-top" style="background-color: blueviolet;">
+			<div id="menu_bg" class="container">
+				<a class="navbar-brand" href="index.html"></a>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				<button id="burger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span></span>
 					<span></span>
 					<span></span>
 				</button>
 
+				<!-- Menu inside -->
 				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link scroll-link" href="#top-content">Top</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link scroll-link" href="#section-1">Item 1</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link scroll-link" href="#section-2">Item 2</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link scroll-link" href="#section-3">Item 3</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link scroll-link" href="#section-4">Item 4</a>
-						</li>
-					</ul>
-				</div>
+
+					<!-- Left Menu -->
+					<div class="left">
+						<div class="contact">
+							Headquarters
+							<div class="address">
+								<p>Málaga, España<br>
+									Av. Isabel Manoja 35<br>
+									29620</p>
+							</div>
+						</div>
+
+						<div class="social">
+							Find us on
+							<a target="_blank" href="https://www.behance.net/montenegrods">Behance</a>
+							<a target="_blank" href="https://www.instagram.com/montenegro_studio">Instagram</a>
+							<a target="_blank" href="https://www.facebook.com/MontenegroCreativeStudio">Facebook</a>
+						</div>
+
+					</div>
+
+					<!-- Right inside -->
+					<div class="right">
+						<div class="menu-main-menu-container">
+							<ul id="menu-main-menu" class="menu">
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- End Menu inside -->
 
 			</div>
-		</nav>
+		</nav><!-- End Top menu -->
 
-		<!-- Top content -->
+		<!-- Main -->
 		<div id="main">
-			<div id="content" class="container">
 
-				<!-- The loop START -->
+			<div class="container">
+				<div id="contactblock" class="row align-items-left">
 
-				<p>we do</p>
-				<p>Industrial purchasing/</p>
-				<p>International deliveries/</p>
-				<p>we help industries/</p>
-				<p>and <a href="">We</a> love it!</p>
-				<p>consult for cost quote</p>
-				<p>&nbsp;</p>
+					<!-- Menú left -->
+					<div class="col-3">
+						<div class="filters">
+							<ul class="contacts">
+								<li><a class="quote active" href="quote.html">quote</a>
+								</li>
+								<li><a class="contact-us" href="contact.html">Just say hello!</a></li>
+								<li><a class="wwu" href="work-with-us.html">work with us</a></li>
+							</ul>
+						</div>
+					</div>
 
-				<div class="text-center my-5">
-					<img src="assets/img/prototipado.png" alt="...">
+					<!-- Contact form -->
+					<div class="col-6">
+						<form id="formcontact">
+							<div class="form-group">
+								<input type="text" class="form-control form-control-lg border-black rounded-0" id="" placeholder="name">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control form-control-lg border-black rounded-0" id=""
+									placeholder="email">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control form-control-lg border-black rounded-0" id=""
+									placeholder="subject">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control form-control-lg border-black rounded-0" id="" rows="5"
+									placeholder="Tell us what you need"></textarea>
+							</div>
+							<p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+							<button type="button" class="btn btn-outline-dark btn-lg btn-block">Send</button>
+						</form>
+					</div>
+
+					<!-- Menú right -->
+					<div class="col-3">
+					</div>
 				</div>
+			</div>
 
-				<!-- The loop END -->
-
-			</div> <!-- end content -->
 		</div> <!-- end main -->
 
 	</div> <!-- end top content -->
@@ -107,7 +147,7 @@
 
 			<div class="contact">
 				<div class="email">
-					<a class="color_trans" href="mailto:devecchi@exxo.es">devecchi@exxo.es</a>
+					<a class="color_trans" href="mailto:sales@exxo.es">sales@exxo.es</a>
 				</div>
 				<div class="postal">
 					<span class="thin">Headquarters</span>
