@@ -20,7 +20,7 @@ This landing page is part of my front-end practices. Use the following resources
 
 ## Preview
 
-[![Landing Page Preview](https://github.com/JPDevM/learn-code/tree/master/4%20Micro%20Proyect%20-%20Landing%20Page%20-%20Exxo/assets/img/readme-resourses/landing-page.png)](https://github.com/JPDevM/learn-code/tree/master/4%20Micro%20Proyect%20-%20Landing%20Page%20-%20Exxo/assets/img/readme-resourses/landing-page.png)
+[![Landing Page Preview](https://github.com/JPDevM/learn-code/tree/master/4_Micro_Proyect_-_Landing_Page_-_Exxo/assets/img/readme-resourses/landing-page.png)](https://github.com/JPDevM/learn-code/tree/master/4_Micro_Proyect_-_Landing_Page_-_Exxo/assets/img/readme-resourses/landing-page.png)
 
 **[View Live Preview](https://exxo.es)**
 
