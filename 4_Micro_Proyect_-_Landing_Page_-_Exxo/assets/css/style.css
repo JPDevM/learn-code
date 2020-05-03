@@ -110,78 +110,82 @@ body {
   text-align: left;
 }
 
-.navbar {
-  background: #fff;
-  transition: all 0.6s;
-  backface-visibility: hidden;
-}
-
-.navbar button {
-  border: transparent;
-  border-color: transparent;
-}
-
-.navbar-dark .navbar-nav {
-  font-size: 15px;
-  color: #fff;
-  text-transform: uppercase;
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff;
-  color: rgba(255, 255, 255, 0.8);
-  border: 0;
-}
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #fff;
-}
-.navbar-dark .navbar-nav .nav-link:focus {
-  color: #fff;
-  outline: 0;
-}
-
-.navbar-dark .navbar-toggler:focus {
-  background: none;
-  outline: 0;
-}
-
-.navbar-dark .navbar-toggler span {
-  display: block;
-  width: 40px;
-  height: 6px;
-  margin: 6px auto;
-  background: #000;
-  transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
-.navbar-dark .navbar-toggler:hover span,
-.navbar-dark .navbar-toggler:focus span {
-  background: #ccc;
-}
-
-/* rotate span */
-.navbar-dark .navbar-toggler[aria-expanded='true'] span:first-of-type {
-  transform: rotate(45deg) translate(12px, 12px);
-}
-
-.navbar-dark .navbar-toggler[aria-expanded='true'] span:nth-of-type(2) {
-  opacity: 0;
-}
-
-.navbar-dark .navbar-toggler[aria-expanded='true'] span:last-of-type {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-.navbar-dark .navbar-toggler[aria-expanded='false'] span {
-  transform: none;
-  opacity: 1;
-}
-
-.navbar-brand {
+/*Navigation 2*/
+header .exxo_icon {
   width: 162px;
   height: 44px;
   background: url(../img/logo.png) left center no-repeat;
   border: 0;
-  text-indent: -99999px;
+  text-indent: 1;
+}
+
+.navbar {
+  transition: all 0.6s;
+  backface-visibility: hidden;
+}
+
+#navbar-top {
+  background-color: black;
+}
+
+#navbar-top button {
+  border: transparent;
+  border-color: transparent;
+}
+
+#navbar-top {
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+}
+#navbar-top .nav-link {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  border: 0;
+}
+#navbar-top .nav-link:hover {
+  color: #fff;
+}
+#navbar-top .nav-link:focus {
+  color: #fff;
+  outline: 0;
+}
+
+#navbar-top .navbar-toggler:focus {
+  background: none;
+  outline: 0;
+}
+
+#navbar-top .navbar-toggler span {
+  display: block;
+  width: 40px;
+  height: 6px;
+  margin: 6px auto;
+  background: white;
+  transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#navbar-top .navbar-toggler:hover span,
+#navbar-top .navbar-toggler:focus span {
+  background: #ccc;
+}
+
+/* rotate span */
+#navbar-top .navbar-toggler[aria-expanded='true'] span:first-of-type {
+  transform: rotate(45deg) translate(12px, 12px);
+}
+
+#navbar-top .navbar-toggler[aria-expanded='true'] span:nth-of-type(2) {
+  opacity: 0;
+}
+
+#navbar-top .navbar-toggler[aria-expanded='true'] span:last-of-type {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.#navbar-top .navbar-toggler[aria-expanded='false'] span {
+  transform: none;
+  opacity: 1;
 }
 
 /* ===== Navbar inside ===== */
@@ -416,9 +420,6 @@ body {
   color: black;
 }
 
-#contactblock .filters {
-}
-
 #contactblock .filters ul {
   list-style-type: none;
 }
@@ -442,12 +443,20 @@ body {
   border-color: currentColor;
 }
 
-#formcontact {
+#contactblock .active {
+  background-color: black;
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-#formcontact input[type='text'],
-#formcontact input[type='email'],
-#formcontact textarea {
+#formcontact input[type],
+#formwwu input[type],
+#formquote input[type],
+#formcontact textarea,
+#formwwu textarea,
+#formquote textarea {
   background: none;
   border: none;
   border-bottom-color: currentcolor;
@@ -456,14 +465,32 @@ body {
   border-bottom: 2px solid #000;
   padding: 10px 5px;
   font-size: 18px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: medium;
   color: #000;
   opacity: 0.5;
 }
 
-#formcontact input[type='text']:focus,
-#formcontact input[type='email']:focus,
-#formcontact textarea:focus {
+#formcontact input[type]:invalid,
+#formwwu input[type]:invalid,
+#formquote input[type]:invalid,
+#formcontact textarea:invalid,
+#formwwu textarea:invalid,
+#formquote textarea:invalid {
+  color: red;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#formcontact input[type]:focus,
+#formwwu input[type]:focus,
+#formquote input[type]:focus,
+#formcontact textarea:focus,
+#formwwu textarea:focus,
+#formquote textarea:focus {
   opacity: 1 !important;
   outline: none !important;
   outline-width: 0 !important;
@@ -472,8 +499,24 @@ body {
   -webkit-box-shadow: none;
 }
 
-#formcontact button {
+#formcontact button,
+#formwwu button,
+#formquote button {
   border-radius: 0;
+}
+
+#formcontact .input-group-text,
+#formwwu .input-group-text,
+#formquote .input-group-text {
+  border-radius: 0 !important;
+  border-color: white;
+  border-bottom: 2px solid #000;
+  background-color: transparent;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: medium;
+  opacity: 0.5;
 }
 
 /* ===== Footer ===== */
@@ -556,15 +599,6 @@ footer .social a {
 footer .full_logo {
   margin-bottom: 25px;
   position: relative;
-}
-
-footer .full_logo .cross_over {
-  width: 180px;
-  height: 6px;
-  background-color: #000;
-  position: absolute;
-  top: 12px;
-  left: -2px;
 }
 
 footer .credits {
