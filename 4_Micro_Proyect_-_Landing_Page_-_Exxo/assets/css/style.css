@@ -411,7 +411,7 @@ header .exxo_icon {
 }
 /* ===== Section prototipado ===== */
 
-/* ===== Section Contacto ===== */
+/* ===== Section Contacto & Quote & Work whith us ===== */
 
 #contactblock {
 }
@@ -517,6 +517,45 @@ header .exxo_icon {
   font-weight: 300;
   font-size: medium;
   opacity: 0.5;
+}
+
+/* ===== Seccion WE ===== */
+
+#we .title {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 5em;
+  line-height: 1.5em;
+  text-align: left;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+#we .subtitle {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+#we p {
+  font-family: 'Open Sans', sans-serif;
+  text-align: right;
+  font-size: 1em;
+  color: #888;
+  font-weight: 300;
+  line-height: normal;
+}
+
+#we img {
+  filter: grayscale(100%);
+}
+
+#we div {
+  padding: 0px !important;
 }
 
 /* ===== Footer ===== */

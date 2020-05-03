@@ -13,9 +13,8 @@ This landing page is part of my front-end practices. Use the following resources
 - ~~Reuse navigation bar and footer in a separate html file.~~
 - ~~Text with loading effect.~~
 - Loader page
-- Color change of the navigation bar
 - ~~Indexed CSS~~
--
+- Capcha in forms
 -
 
 ## Preview
@@ -24,7 +23,7 @@ This landing page is part of my front-end practices. Use the following resources
 
 **[View Live Preview](https://exxo.es)**
 
-Start Bootstrap was created by and is maintained by **[Juan Pablo Devecchi Martinengo](http://JPDevM.com/)**.
+This landing page was created by and is maintained by **[Juan Pablo Devecchi Martinengo](http://JPDevM.com/)**.
 
 - http://JPDevM.com
 - https://twitter.com/JPDevM
@@ -32,4 +31,4 @@ Start Bootstrap was created by and is maintained by **[Juan Pablo Devecchi Marti
 
 ## Copyright and License
 
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/) license.
+Copyright 2020. Code released under the [MIT](https://github.com/) license.
