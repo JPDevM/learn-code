@@ -183,7 +183,7 @@ header .exxo_icon {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-.#navbar-top .navbar-toggler[aria-expanded='false'] span {
+#navbar-top .navbar-toggler[aria-expanded='false'] span {
   transform: none;
   opacity: 1;
 }
@@ -412,9 +412,6 @@ header .exxo_icon {
 /* ===== Section prototipado ===== */
 
 /* ===== Section Contacto & Quote & Work whith us ===== */
-
-#contactblock {
-}
 
 #contactblock p {
   color: black;
