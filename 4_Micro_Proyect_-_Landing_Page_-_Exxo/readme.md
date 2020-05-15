@@ -14,6 +14,7 @@ This landing page is part of my front-end practices. Use the following resources
 - ~~Text with loading effect.~~
 - Loader page
 - ~~Indexed CSS~~
+- Scss
 - Create a contact form with Nodemailer, React, and Express
 - Capcha in forms
 - Optimice Site: minify and uglify; JS, HTML, CSS.
