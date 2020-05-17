@@ -49,8 +49,8 @@
 						<div class="filters">
 							<ul class="contacts">
 								<li class="active">quote</li>
-								<li><a class="contact-us" href="contact.html">Just say hello!</a></li>
-								<li><a class="wwu" href="work-with-us.html">work with us</a></li>
+								<li><a class="contact-us" href="contact.php">Just say hello!</a></li>
+								<li><a class="wwu" href="work-with-us.php">work with us</a></li>
 							</ul>
 						</div>
 					</div>

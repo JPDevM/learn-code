@@ -48,10 +48,9 @@
 					<div class="col-3">
 						<div class="filters">
 							<ul class="contacts">
-								<li><a class="quote" href="quote.html">quote</a>
-								</li>
+								<li><a class="quote" href="quote.php">quote</a></li>
 								<li class="active">Just say hello!</li>
-								<li><a class="wwu" href="work-with-us.html">work with us</a></li>
+								<li><a class="wwu" href="work-with-us.php">work with us</a></li>
 							</ul>
 						</div>
 					</div>
