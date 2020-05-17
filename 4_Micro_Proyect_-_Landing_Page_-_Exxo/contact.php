@@ -21,6 +21,9 @@
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/ico/favicon.png">
 
+	<!-- reCAPTCHA -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body class="home">
@@ -57,23 +60,95 @@
 					<div class="col-6">
 						<form id="formcontact">
 							<div class="form-group">
-								<input type="text" class="form-control form-control-lg border-black rounded-0" id="" placeholder="name">
+								<input 	type="text" 
+												name="nameContact"
+												class="form-control form-control-lg border-black rounded-0" 
+												placeholder="name">
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control form-control-lg border-black rounded-0" id=""
-									placeholder="email">
+								<input 	type="email" 
+												name="emailContact"
+												class="form-control form-control-lg border-black rounded-0"
+												placeholder="email">
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control form-control-lg border-black rounded-0" id=""
-									placeholder="subject">
+								<input 	type="text" 
+												name="subjetContact"
+												class="form-control form-control-lg border-black rounded-0"
+												placeholder="subject">
 							</div>
 							<div class="form-group">
-								<textarea class="form-control form-control-lg border-black rounded-0" id="" rows="5"
-									placeholder="Tell us what you need"></textarea>
+								<textarea 	name="messajeContact"
+														class="form-control form-control-lg border-black rounded-0" 
+														rows="5"
+														placeholder="Tell us what you need">
+								</textarea>
 							</div>
 							<p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
-							<button type="button" class="btn btn-outline-dark btn-lg btn-block">Send</button>
+								
+							<!-- reCAPTCHA Etiqueta: www.exxo.es contact -->
+							<div class="text-center">
+								<div 	class="g-recaptcha"
+											data-sitekey="6LcF0_gUAAAAAIrUo2z7fDKGUaXPRahbpsun7mZR">
+								</div>
+							</div>
+							<button 	type="submit" 
+												name ="submitContact"
+												class="btn btn-outline-dark btn-lg btn-block">Send
+							</button>
 						</form>
+
+						<div class="statusFormContact">
+							<?php 
+								if(isset($_POST['submitContact'])) 
+								{ 
+									$user_name 		= $_POST['nameContact']; 
+									$user_email		= $_POST['emailContact']; 
+									$subjet 			= $_POST['subjetContact']; 
+									$user_message = $_POST['messajeContact']; 
+									
+									/* Sender email */
+									$email_from		 	= 'noreply@exxo.es'; 
+									$email_subject 	= "New Form Submission"; 
+									$email_body 		=	"Name: $user_name.\n". 
+																		"Email Id: $user_email.\n". 
+																		"Subjet: $subjet.\n". 
+																		"User Message: $user_messages.\n"; 
+
+									/* Recipient email */
+									$to_email = "devecchi@exxo.es"; 
+									$headers 	= "From: $email_from\r\n"; 
+									$headers .= "Reply-To: $user_email\r\n"; 
+
+									/* reCAPCHA & send */
+									$secretKey 	 	= "6LcF0_gUAAAAAFkeLk-28X4YxX4QaBC2K1fGsmHy"; 
+									$responseKey 	= $_POST['g-recaptcha-response']; 
+									$UserIP 			= $_SERVER['REOMTE_ADDR']; 
+									$url 					= "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$UserIP"; 
+									
+									$response = file_get_contents($url); 
+									$response = json_decode($response); 
+									
+									If ($response->success) 
+									{ 
+										mail($to_email,$email_subject,$email_body,$headers); 
+										echo "<p>Message sent Successfully</p>"; 
+									} 
+									else 
+									{
+										echo "<span>Invalid Captcha, Please Try Again</span>"; 
+									} 
+										
+								}
+							?>
+
+						</div>
+
+					</div>
+
+
+
+
 					</div>
 
 					<!-- Menú right -->

@@ -21,6 +21,9 @@
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/ico/favicon.png">
 
+	<!-- reCAPTCHA -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body class="home">
@@ -57,26 +60,94 @@
 					<div class="col-6">
 						<form id="formwwu">
 							<div class="form-group">
-								<input type="text" class="form-control form-control-lg border-black rounded-0" id="" placeholder="name">
+								<input 	type="text" 
+												name ="nameWWU"
+												class="form-control form-control-lg border-black rounded-0" 
+												placeholder="name">
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control form-control-lg border-black rounded-0" id=""
-									placeholder="email">
+								<input 	type="email" 
+												name ="emailWWU"
+												class="form-control form-control-lg border-black rounded-0" 
+												placeholder="email">
 							</div>
 							<div class="input-group">
 								<div class="input-group-prepend">
 									<span class="input-group-text" id="basic-addon3">https://www.linkedin.com/</span>
 								</div>
-								<input type="text" class="form-control form-control-lg border-black rounded-0" id=""
-									placeholder="linkedin profile">
+								<input 	type="text" 
+												name ="linkedInWWU"
+												class="form-control form-control-lg border-black rounded-0" 
+												placeholder="linkedin profile">
 							</div>
 							<div class="form-group">
-								<textarea class="form-control form-control-lg border-black rounded-0" id="" rows="5"
-									placeholder="Tell us why you are the best"></textarea>
+								<textarea 	name="messajeWWU"
+														class="form-control form-control-lg border-black rounded-0" 
+														rows="5"
+														placeholder="Tell us why you are the best">
+									</textarea>
 							</div>
-							<p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
-							<button type="button" class="btn btn-outline-dark btn-lg btn-block">Send</button>
+							<p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>							
+
+							<!-- reCAPTCHA Etiqueta: www.exxo.es work-with-us -->
+							<div class="text-center">
+								<div 	class="g-recaptcha" 
+											data-sitekey="6LenzfgUAAAAACzhUWiTxGsAv1a_MRW4trQV6xXJ">
+								</div>
+							</div>
+
+							<button 	type="submit" 
+												name ="submitWWU"
+												class="btn btn-outline-dark btn-lg btn-block">Send
+							</button>
 						</form>
+
+						<div class="statusFormWWU">
+							<?php 
+								if(isset($_POST['submitWWU'])) 
+								{ 
+									$user_name 		= $_POST['nameWWU']; 
+									$user_email		= $_POST['emailWWU']; 
+									$linkedin			= $_POST['linkedInWWU']; 
+									$user_message = $_POST['messajeWWU']; 
+									
+									/* Sender email */
+									$email_from		 	= 'noreply@exxo.es'; 
+									$email_subject 	= "New Form Submission"; 
+									$email_body 		=	"Name: $user_name.\n". 
+																		"Email Id: $user_email.\n". 
+																		"LinkedIn: $linkedin.\n". 
+																		"User Message: $user_messages.\n"; 
+
+									/* Recipient email */
+									$to_email = "devecchi@exxo.es"; 
+									$headers 	= "From: $email_from\r\n"; 
+									$headers .= "Reply-To: $user_email\r\n"; 
+
+									/* reCAPCHA & send */
+									$secretKey 	 	= "6LenzfgUAAAAAK5PanEH2bqe6ZteWKm_-UvgLVAX"; 
+									$responseKey 	= $_POST['g-recaptcha-response']; 
+									$UserIP 			= $_SERVER['REOMTE_ADDR']; 
+									$url 					= "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$UserIP"; 
+									
+									$response = file_get_contents($url); 
+									$response = json_decode($response); 
+									
+									If ($response->success) 
+									{ 
+										mail($to_email,$email_subject,$email_body,$headers); 
+										echo "<p>Message sent Successfully</p>"; 
+									} 
+									else 
+									{
+										echo "<span>Invalid Captcha, Please Try Again</span>"; 
+									} 
+										
+								}
+							?>
+
+						</div>
+
 					</div>
 
 					<!-- Menú right -->

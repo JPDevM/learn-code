@@ -518,6 +518,19 @@ header .exxo_icon {
   opacity: 0.5;
 }
 
+/* ===== reCAPTCHA ===== */
+.g-recaptcha {
+  display: inline-block;
+}
+
+.statusFormQuote p {
+  color: green;
+}
+
+.statusFormQuote span {
+  color: red;
+}
+
 /* ===== Seccion WE ===== */
 
 #we .title {
