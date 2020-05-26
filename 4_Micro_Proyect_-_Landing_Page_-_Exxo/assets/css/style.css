@@ -1,47 +1,27 @@
 /* =======================================================
+    CSS DIRECTORY Extra Small devices
 
-   CSS DIRECTORY
-
-  A que devices aplica esto??????????????????????????????
-      ????-A. GLOBAL SETTINGS (a, p, h1, h2 etc.)
-            - Crossed out links
-      ????-B. PRIMARY LAYOUT STRUCTURE (body, primary divs)
-      ????-C. SECONDARY LAYOUT STRUCTURE (header, footer, sidebar)
-            - Loader
-            - Navbar 
-            - Navbar inside
-            - Top content
-            - Footer
-      ????-D. TERTIEARY LAYOUT STRUCTURE (page regions, floats)
-            - Typewriter Effect
-            - Prototyped section
-            - Contact & Quote & Work whith us section
-            - We section
-  
-  Small devices (tablets, 768px and up)
-      Small-A. GLOBAL SETTINGS (a, p, h1, h2 etc.)
-            - Crossed out links
-      Small-B. PRIMARY LAYOUT STRUCTURE (body, primary divs)
-      Small-C. SECONDARY LAYOUT STRUCTURE (header, footer, sidebar)
-            - Loader
-            - Navbar 
-            - Navbar inside
-            - Top content
-            - Footer
-      Small-D. TERTIEARY LAYOUT STRUCTURE (page regions, floats)
-            - Typewriter Effect
-            - Prototyped section
-            - Contact & Quote & Work whith us section
-            - We section
-    
-  Medium devices (desktops, 992px and up)
-    
-  Large devices (large desktops, 1200px and up)
-
+      GLOBAL SETTINGS (a, p, h1, h2 etc.)
+        - Crossed out links
+      PRIMARY LAYOUT STRUCTURE (body, primary divs)
+      SECONDARY LAYOUT STRUCTURE (header, footer, sidebar)
+        - Loader
+        - Navbar 
+        - Navbar inside
+        - Top content
+        - Footer
+      TERTIEARY LAYOUT STRUCTURE (page regions, floats)
+        - Typewriter Effect
+        - Prototyped section
+        - Contact & Quote & Work whith us section
+        - We section
+      Small devices (tablets, 768px and up)
+      Medium devices (desktops, 992px and up)  
+      Large devices (large desktops, 1200px and up)
    ===================================================== */
 
 /* ============================
-   ????-A. GLOBAL SETTINGS 
+   GLOBAL SETTINGS 
    (a, p, h1, h2 etc.)
 =============================== */
 
@@ -94,13 +74,12 @@ img {
 }
 
 /* =================================
-   ????-B. PRIMARY LAYOUT STRUCTURE 
+  PRIMARY LAYOUT STRUCTURE 
    (body, primary divs)
 ==================================== */
 
 body {
   font-family: 'Open Sans', sans-serif;
-  line-height: 30px;
 }
 
 .medium-paragraph {
@@ -109,19 +88,9 @@ body {
 }
 
 /* ===================================
-   ????-C. SECONDARY LAYOUT STRUCTURE 
+   SECONDARY LAYOUT STRUCTURE 
    (header, navbar, footer, sidebar)
 ====================================== */
-
-#main {
-  margin-top: 8em;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#main #content {
-  margin: 0 auto;
-  text-align: left;
-}
 
 /* ===== Loader ===== */
 
@@ -204,7 +173,7 @@ header .exxo_icon {
 #menu_bg .left {
   width: 25%;
   float: left;
-  font-size: 14px;
+  font-size: 7px;
 }
 
 #menu_bg .left .contact,
@@ -232,6 +201,8 @@ header .exxo_icon {
 }
 
 #menu_bg .right {
+  font-size: 2em;
+  line-height: 0.95em;
   width: 75%;
   float: right;
 }
@@ -239,6 +210,7 @@ header .exxo_icon {
 #menu_bg .right ul {
   list-style: none;
   padding-left: 0;
+  padding-top: 0.1em;
   margin: 0;
 }
 
@@ -248,8 +220,6 @@ header .exxo_icon {
 
 #menu_bg .right ul li a {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 6.3em;
-  line-height: 0.95em;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
@@ -263,14 +233,28 @@ header .exxo_icon {
   border-color: #fff;
 }
 
+/* ===================================
+   TERTIEARY LAYOUT STRUCTURE 
+   (page regions, floats)
+====================================== */
+
 /* ===== Top content ===== */
-.home #content p {
+#main {
+  margin-top: 8em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#main #content {
+  margin: 0 auto;
+  text-align: left;
+}
+#main #content p {
   color: #fff;
   text-shadow: 1px 0px #000, 0.54px 0.84px #000, -0.41px 0.9px #000,
     -0.98px 0.14px #000, -0.65px -0.75px #000, 0.28px -0.95px #000,
     0.96px -0.27px #000;
   text-transform: uppercase;
-  font-size: 4.25em;
+  font-size: 1.5em;
   font-weight: bold;
   line-height: 0.8em;
   letter-spacing: -0.04em;
@@ -279,22 +263,22 @@ header .exxo_icon {
   overflow: hidden;
 }
 
-.home #content a {
+#main #content a {
   color: #000;
   text-shadow: none;
 }
 
-.home #content a:hover {
+#main #content a:hover {
   color: #000;
   opacity: 1;
 }
 
-.home #content a:hover:after {
+#main #content a:hover:after {
   border-color: #000;
 }
 
-.home #content p::selection,
-.home #content a::selection {
+#main #content p::selection,
+#main #content a::selection {
   background-color: #000;
   color: white;
   line-height: normal;
@@ -302,11 +286,10 @@ header .exxo_icon {
 
 /* ===== Footer ===== */
 footer {
-  padding: 130px 100px 60px 100px;
+  padding-top: 2em;
   overflow: hidden;
   clear: both;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 20px;
   color: #000;
   text-transform: uppercase;
   font-weight: bold;
@@ -325,8 +308,8 @@ footer .thin {
 }
 
 footer .menu {
-  font-size: 3em;
-  line-height: 0.85em;
+  font-size: 1.5em;
+  line-height: 0.8em;
   letter-spacing: -0.04em;
   margin-bottom: 30px;
 }
@@ -350,25 +333,26 @@ footer .menu a:hover:after {
 }
 
 footer .contact {
-  font-size: 0.7em;
+  font-size: 1em;
+  line-height: 1.2em;
 }
 
 footer .contact p {
   margin: 0;
-  line-height: normal;
 }
 
 footer .contact .email {
-  margin-bottom: 25px;
+  margin-bottom: 2em;
 }
 
 footer .contact .postal {
-  margin-bottom: 25px;
+  margin-bottom: 2em;
 }
 
 footer .social {
-  font-size: 0.7em;
-  margin-bottom: 25px;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-bottom: 2em;
 }
 
 footer .social a {
@@ -377,21 +361,12 @@ footer .social a {
 }
 
 footer .full_logo {
-  margin-bottom: 25px;
+  font-size: 1em;
   position: relative;
 }
 
-@media only screen and (max-width: 700px) {
-  footer {
-    padding: 80px 30px 60px 30px;
-  }
-  footer .menu {
-    font-size: 38px;
-  }
-}
-
 /* ===========================
-   ????-D. TERTIEARY LAYOUT STRUCTURE 
+   TERTIEARY LAYOUT STRUCTURE 
    (page regions, floats)
 ============================ */
 
@@ -501,20 +476,35 @@ footer .full_logo {
 }
 
 /* ===== Prototyped section ===== */
+section #prototipadoImg img {
+  max-width: 50%;
+}
 
 /* ===== Contact & Quote & Work whith us section ===== */
 #contactblock p {
   color: black;
 }
+
 #contactblock .filters ul {
   list-style-type: none;
+  padding: 0em;
 }
+
+#contactblock .filters ul {
+  list-style-type: none;
+  padding: 0em;
+}
+
+#contactblock .filters ul li {
+  font-size: 1em;
+}
+
 #contactblock .filters .contacts a {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 20px;
   color: #000;
 }
+
 #contactblock .filters .contacts a::after {
   border-bottom-color: rgb(0, 0, 0);
   content: '';
@@ -526,13 +516,14 @@ footer .full_logo {
   top: 50%;
   border-color: currentColor;
 }
+
 #contactblock .active {
   background-color: black;
   color: white !important;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 20px;
 }
+
 #formcontact input[type],
 #formwwu input[type],
 #formquote input[type],
@@ -554,6 +545,7 @@ footer .full_logo {
   color: #000;
   opacity: 0.5;
 }
+
 #formcontact input[type]:invalid,
 #formwwu input[type]:invalid,
 #formquote input[type]:invalid,
@@ -565,6 +557,7 @@ footer .full_logo {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }
+
 #formcontact input[type]:focus,
 #formwwu input[type]:focus,
 #formquote input[type]:focus,
@@ -578,11 +571,13 @@ footer .full_logo {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }
+
 #formcontact button,
 #formwwu button,
 #formquote button {
   border-radius: 0;
 }
+
 #formcontact .input-group-text,
 #formwwu .input-group-text,
 #formquote .input-group-text {
@@ -596,13 +591,25 @@ footer .full_logo {
   font-size: medium;
   opacity: 0.5;
 }
+
 /* reCAPTCHA */
 .g-recaptcha {
   display: inline-block;
 }
+
+.reCAPTCHA-text {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: xx-small;
+  opacity: 0.5;
+}
+
 .statusFormQuote p {
   color: green;
 }
+
 .statusFormQuote span {
   color: red;
 }
@@ -647,46 +654,162 @@ footer .full_logo {
    =================================================================================
 ================================================================================= */
 
-/* ===================================
-   Small-C. SECONDARY LAYOUT STRUCTURE 
+@media (min-width: 768px) {
+  /* ======================================
+   SECONDARY LAYOUT STRUCTURE 
    (header, navbar, footer, sidebar)
-====================================== */
-
-@media (max-width: 768px) {
-  /* ===== Navbar ===== */
-  #navbar-top {
-    font-size: 15px;
-  }
+  ====================================== */
 
   /* ===== Navbar inside ===== */
   #menu_bg .left {
-    font-size: 10px;
+    font-size: 16px;
   }
 
   #menu_bg .right ul li a {
-    font-size: 3em;
-    line-height: 0.5em;
+    font-size: 2em;
+    line-height: 1.2em;
   }
 
-  /* ===== Top content ===== */
-  .home #content p {
-    font-size: 1.2em;
-    line-height: 0.8em;
+  #menu_bg .right ul {
+    padding-top: 0.5em;
   }
 
   /* ===== Footer ===== */
   footer .menu {
-    font-size: 0.8em;
-    line-height: 0.85em;
-    letter-spacing: -0.04em;
-    margin-bottom: 30px;
+    font-size: 2.8em;
   }
 
   footer .contact {
-    font-size: 0.4em;
+    font-size: 1.2em;
   }
 
   footer .social {
-    font-size: 0.4em;
+    font-size: 1.2em;
+  }
+
+  footer .full_logo {
+    font-size: 1.2em;
+  }
+  /* ====================================
+      TERTIEARY LAYOUT STRUCTURE 
+      (page regions, floats)
+  ==================================== */
+
+  /* ===== Top content ===== */
+  #main #content p {
+    font-size: 2.8em;
+  }
+}
+
+/* =================================================================================
+   =================================================================================
+   ==================== Medium devices (desktops, 992px and up) ====================
+   =================================================================================
+================================================================================= */
+
+@media (min-width: 992px) {
+  /* ======================================
+   SECONDARY LAYOUT STRUCTURE 
+   (header, navbar, footer, sidebar)
+  ====================================== */
+
+  /* ===== Navbar inside ===== */
+  #menu_bg .left {
+    font-size: 18px;
+  }
+
+  #menu_bg .right ul li a {
+    font-size: 2.5em;
+    line-height: 1.1em;
+  }
+
+  #menu_bg .right ul {
+    padding-top: 0.5em;
+  }
+
+  /* ===== Footer ===== */
+  footer .menu {
+    font-size: 4.8em;
+  }
+
+  footer .contact {
+    font-size: 1.5em;
+  }
+
+  footer .social {
+    font-size: 1.5em;
+  }
+
+  footer .full_logo {
+    font-size: 1.5em;
+  }
+
+  /* ===================================
+      TERTIEARY LAYOUT STRUCTURE 
+      (page regions, floats)
+  ==================================== */
+
+  /* ===== Top content ===== */
+  #main #content p {
+    font-size: 3em;
+  }
+
+  /* ===== Contact & Quote & Work whith us section ===== */
+  #contactblock .filters ul li {
+    font-size: 1.8em;
+  }
+}
+
+/* =================================================================================
+   =================================================================================
+   ================= Large devices (large desktops, 1200px and up) =================
+   =================================================================================
+================================================================================= */
+
+@media (min-width: 1200px) {
+  /* ======================================
+   SECONDARY LAYOUT STRUCTURE 
+   (header, navbar, footer, sidebar)
+  ====================================== */
+
+  /* ===== Navbar inside ===== */
+  #menu_bg .left {
+    font-size: 20px;
+  }
+
+  #menu_bg .right ul {
+    padding-top: 0.5em;
+  }
+
+  #menu_bg .right ul li a {
+    font-size: 3em;
+    line-height: 1em;
+  }
+
+  /* ===== Footer ===== */
+  footer .menu {
+    font-size: 5em;
+  }
+
+  footer .contact {
+    font-size: 1.5em;
+  }
+
+  footer .social {
+    font-size: 1.5em;
+  }
+
+  footer .full_logo {
+    font-size: 1.5em;
+  }
+
+  /* ===================================
+      TERTIEARY LAYOUT STRUCTURE 
+      (page regions, floats)
+  ==================================== */
+
+  /* ===== Top content ===== */
+  #main #content p {
+    font-size: 4.8em;
   }
 }

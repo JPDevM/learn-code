@@ -45,7 +45,7 @@
 				<div id="contactblock" class="row align-items-left">
 
 					<!-- Menú left -->
-					<div class="col-3">
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
 						<div class="filters">
 							<ul class="contacts">
 								<li class="active">quote</li>
@@ -56,7 +56,7 @@
 					</div>
 
 					<!-- Contact form -->
-					<div class="col-6">
+					<div class="col-xs-12 col-sm-12 col-md-9 col-lg-6 col-xl-6">
 						<form id="formquote">
 							<div class="form-group">
 								<input type="text" name="nameQuote" class="form-control form-control-lg border-black rounded-0"
@@ -75,11 +75,12 @@
 									placeholder="subject">
 							</div>
 							<div class="form-group">
-								<textarea name="messajeQuote" class="form-control form-control-lg border-black rounded-0" rows="5"
-									placeholder="Tell us what you need">
-								</textarea>
+								<textarea name="messajeQuote" id="messajeQuote" class="form-control rounded-0" rows="5"
+									placeholder="Tell us what you need"></textarea>
 							</div>
-							<p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+							<!--ends from group-->
+							<p class="reCAPTCHA-text">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of
+								Service apply.</p>
 
 							<!-- reCAPTCHA Etiqueta: www.exxo.es quote -->
 							<div class="text-center">
@@ -91,50 +92,7 @@
 						</form>
 
 						<div class="statusFormQuote">
-							<?php 
-								if(isset($_POST['submitQuote'])) 
-								{ 
-									$user_name 		= $_POST['nameQuote']; 
-									$user_email		= $_POST['emailQuote']; 
-									$phone 				= $_POST['celQuote']; 
-									$subjet 			= $_POST['subjetQuote']; 
-									$user_message = $_POST['messajeQuote']; 
-									
-									/* Sender email */
-									$email_from		 	= 'noreply@exxo.es'; 
-									$email_subject 	= "New Form Submission"; 
-									$email_body 		=	"Name: $user_name.\n". 
-																		"Email Id: $user_email.\n". 
-																		"Phone No: $phone.\n". 
-																		"Subjet: $subjet.\n". 
-																		"User Message: $user_messages.\n"; 
 
-									/* Recipient email */
-									$to_email = "devecchi@exxo.es"; 
-									$headers 	= "From: $email_from\r\n"; 
-									$headers .= "Reply-To: $user_email\r\n"; 
-
-									/* reCAPCHA & send */
-									$secretKey 	 	= "6LfxXPgUAAAAAMyR_qOeWe5Rz06-10HPsKhKFLVE"; 
-									$responseKey 	= $_POST['g-recaptcha-response']; 
-									$UserIP 			= $_SERVER['REOMTE_ADDR']; 
-									$url 					= "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$UserIP"; 
-									
-									$response = file_get_contents($url); 
-									$response = json_decode($response); 
-									
-									If ($response->success) 
-									{ 
-										mail($to_email,$email_subject,$email_body,$headers); 
-										echo "<p>Message sent Successfully</p>"; 
-									} 
-									else 
-									{
-										echo "<span>Invalid Captcha, Please Try Again</span>"; 
-									} 
-										
-								}
-							?>
 
 						</div>
 
@@ -142,7 +100,7 @@
 
 
 					<!-- Menú right -->
-					<div class="col-3">
+					<div class="col">
 					</div>
 				</div>
 			</div>
