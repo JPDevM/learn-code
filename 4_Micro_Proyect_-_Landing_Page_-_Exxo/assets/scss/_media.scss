@@ -1,0 +1,165 @@
+/* =================================================================================
+   =================================================================================
+   ===================== Small devices (tablets, 768px and up) =====================
+   =================================================================================
+================================================================================= */
+
+@media (min-width: 768px) {
+  /* ======================================
+   SECONDARY LAYOUT STRUCTURE 
+   (header, navbar, footer, sidebar)
+  ====================================== */
+
+  /* ===== Navbar inside ===== */
+  #menu_bg .left {
+    font-size: 16px;
+  }
+
+  #menu_bg .right ul li a {
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+
+  #menu_bg .right ul {
+    padding-top: 0.5em;
+  }
+
+  /* ===== Footer ===== */
+  footer .menu {
+    font-size: 2.8em;
+  }
+
+  footer .contact {
+    font-size: 1.2em;
+  }
+
+  footer .social {
+    font-size: 1.2em;
+  }
+
+  footer .full_logo {
+    font-size: 1.2em;
+  }
+  /* ====================================
+      TERTIEARY LAYOUT STRUCTURE 
+      (page regions, floats)
+  ==================================== */
+
+  /* ===== Top content ===== */
+  #main #content p {
+    font-size: 2.8em;
+  }
+}
+
+/* =================================================================================
+   =================================================================================
+   ==================== Medium devices (desktops, 992px and up) ====================
+   =================================================================================
+================================================================================= */
+
+@media (min-width: 992px) {
+  /* ======================================
+   SECONDARY LAYOUT STRUCTURE 
+   (header, navbar, footer, sidebar)
+  ====================================== */
+
+  /* ===== Navbar inside ===== */
+  #menu_bg .left {
+    font-size: 18px;
+  }
+
+  #menu_bg .right ul li a {
+    font-size: 2.5em;
+    line-height: 1.1em;
+  }
+
+  #menu_bg .right ul {
+    padding-top: 0.5em;
+  }
+
+  /* ===== Footer ===== */
+  footer .menu {
+    font-size: 4.8em;
+  }
+
+  footer .contact {
+    font-size: 1.5em;
+  }
+
+  footer .social {
+    font-size: 1.5em;
+  }
+
+  footer .full_logo {
+    font-size: 1.5em;
+  }
+
+  /* ===================================
+      TERTIEARY LAYOUT STRUCTURE 
+      (page regions, floats)
+  ==================================== */
+
+  /* ===== Top content ===== */
+  #main #content p {
+    font-size: 3em;
+  }
+
+  /* ===== Contact & Quote & Work whith us section ===== */
+  #contactblock .filters ul li {
+    font-size: 1.8em;
+  }
+}
+
+/* =================================================================================
+   =================================================================================
+   ================= Large devices (large desktops, 1200px and up) =================
+   =================================================================================
+================================================================================= */
+
+@media (min-width: 1200px) {
+  /* ======================================
+   SECONDARY LAYOUT STRUCTURE 
+   (header, navbar, footer, sidebar)
+  ====================================== */
+
+  /* ===== Navbar inside ===== */
+  #menu_bg .left {
+    font-size: 20px;
+  }
+
+  #menu_bg .right ul {
+    padding-top: 0.5em;
+  }
+
+  #menu_bg .right ul li a {
+    font-size: 3em;
+    line-height: 1em;
+  }
+
+  /* ===== Footer ===== */
+  footer .menu {
+    font-size: 5em;
+  }
+
+  footer .contact {
+    font-size: 1.5em;
+  }
+
+  footer .social {
+    font-size: 1.5em;
+  }
+
+  footer .full_logo {
+    font-size: 1.5em;
+  }
+
+  /* ===================================
+      TERTIEARY LAYOUT STRUCTURE 
+      (page regions, floats)
+  ==================================== */
+
+  /* ===== Top content ===== */
+  #main #content p {
+    font-size: 4.8em;
+  }
+}

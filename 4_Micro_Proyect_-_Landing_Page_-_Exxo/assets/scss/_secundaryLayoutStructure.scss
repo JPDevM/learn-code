@@ -1,0 +1,277 @@
+/* ===================================
+   SECONDARY LAYOUT STRUCTURE 
+   (header, navbar, footer, sidebar)
+====================================== */
+
+/* ===== Loader ===== */
+
+header {
+  .exxo_icon {
+    width: 162px;
+    height: 44px;
+    background: url(../img/logo.png) left center no-repeat;
+    border: 0;
+    text-indent: 1;
+  }
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  transition: all 0.6s;
+  backface-visibility: hidden;
+}
+
+#navbar-top {
+}
+
+#navbar-top {
+  background-color: $primary-color; /* Revisar si esta bien la sintaxis Sass */
+
+  button {
+    border: transparent;
+    border-color: transparent;
+  }
+
+  .nav-link {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    border: 0;
+  }
+
+  .nav-link:hover {
+    color: #fff;
+  }
+
+  #.nav-link:focus {
+    color: #fff;
+    outline: 0;
+  }
+
+  .navbar-toggler:focus {
+    background: none;
+    outline: 0;
+  }
+
+  .navbar-toggler span {
+    display: block;
+    width: 40px;
+    height: 6px;
+    margin: 6px auto;
+    background: white;
+    transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  .navbar-toggler:hover span,
+  .navbar-toggler:focus span {
+    background: #ccc;
+  }
+
+  /* rotate span */
+  navbar-toggler[aria-expanded='true'] span:first-of-type {
+    transform: rotate(45deg) translate(12px, 12px);
+  }
+
+  .navbar-toggler[aria-expanded='true'] span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggler[aria-expanded='true'] span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .navbar-toggler[aria-expanded='false'] span {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* ===== Navbar inside ===== */
+#menu_bg .left {
+  width: 25%;
+  float: left;
+  font-size: 7px;
+}
+
+#menu_bg .left .contact,
+#menu_bg .left .social,
+#menu_bg .left a,
+#menu_bg .left a:hover:after {
+  color: #fff;
+  text-transform: uppercase;
+  border-color: #fff;
+}
+
+#menu_bg .left .contact .address {
+  font-weight: bold;
+}
+
+#menu_bg .left .contact .address p {
+  margin-top: 0;
+  line-height: normal;
+}
+
+#menu_bg .left .social a {
+  display: table;
+  font-weight: bold;
+  line-height: normal;
+}
+
+#menu_bg .right {
+  font-size: 2em;
+  line-height: 0.95em;
+  width: 75%;
+  float: right;
+}
+
+#menu_bg .right ul {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 0.1em;
+  margin: 0;
+}
+
+#menu_bg .right ul li {
+  text-align: right;
+}
+
+#menu_bg .right ul li a {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#menu_bg .right ul li a:hover {
+  color: #fff;
+}
+
+#menu_bg .right ul li a:hover:after {
+  border-color: #fff;
+}
+
+/* ===== Top content ===== */
+#main {
+  margin-top: 8em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#main #content {
+  margin: 0 auto;
+  text-align: left;
+}
+#main #content p {
+  color: #fff;
+  text-shadow: 1px 0px #000, 0.54px 0.84px #000, -0.41px 0.9px #000,
+    -0.98px 0.14px #000, -0.65px -0.75px #000, 0.28px -0.95px #000,
+    0.96px -0.27px #000;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 0.8em;
+  letter-spacing: -0.04em;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#main #content a {
+  color: $primaryColor;
+  text-shadow: none;
+}
+
+#main #content a:hover {
+  color: $primaryColor;
+  opacity: 1;
+}
+
+#main #content a:hover:after {
+  border-color: $primaryColor;
+}
+
+#main #content p::selection,
+#main #content a::selection {
+  background-color: $primaryColor;
+  color: white;
+  line-height: normal;
+}
+
+/* ===== Footer ===== */
+footer {
+  padding-top: 2em;
+  overflow: hidden;
+  clear: both;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: $primaryColor;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer p::selection,
+footer a::selection,
+footer span::selection {
+  background-color: $primaryColor;
+  text-shadow: none;
+  overflow: hidden;
+}
+
+footer .thin {
+  font-weight: 100;
+}
+
+footer .menu {
+  font-size: 1.5em;
+  line-height: 0.8em;
+  letter-spacing: -0.04em;
+  margin-bottom: 30px;
+}
+
+footer .menu p {
+  margin: 0;
+  color: #fff;
+  text-shadow: 1px 0px #000, 0.54px 0.84px #000, -0.41px 0.9px #000,
+    -0.98px 0.14px #000, -0.65px -0.75px #000, 0.28px -0.95px #000,
+    0.96px -0.27px #000;
+  overflow: hidden;
+}
+
+footer .menu a {
+  color: $primaryColor;
+  text-shadow: none;
+}
+
+footer .menu a:hover:after {
+  border-color: $primaryColor;
+}
+
+footer .contact {
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+footer .contact p {
+  margin: 0;
+}
+
+footer .contact .email {
+  margin-bottom: 2em;
+}
+
+footer .contact .postal {
+  margin-bottom: 2em;
+}
+
+footer .social {
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-bottom: 2em;
+}
+
+footer .social a {
+  display: table;
+  line-height: normal;
+}
+
+footer .full_logo {
+  font-size: 1em;
+  position: relative;
+}
