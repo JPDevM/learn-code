@@ -127,7 +127,7 @@ header {
       li {
         text-align: right;
         a {
-          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          font-family: $documentFont;
           font-weight: bold;
           color: #fff;
           text-transform: uppercase;
@@ -148,7 +148,7 @@ header {
 /* Top content */
 #main {
   margin-top: 8em;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: $documentFont;
 
   #content {
     margin: 0 auto;
@@ -197,7 +197,7 @@ footer {
   padding-top: 2em;
   overflow: hidden;
   clear: both;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: $documentFont;
   color: $primaryColor;
   text-transform: uppercase;
   font-weight: bold;
