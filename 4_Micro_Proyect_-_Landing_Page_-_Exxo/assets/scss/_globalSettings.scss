@@ -1,26 +1,24 @@
-/* ============================
-   GLOBAL SETTINGS 
-   (a, p, h1, h2 etc.)
-=============================== */
-$primaryColor: #000;
+@import 'variables';
+
+/* ===== GLOBAL SETTINGS ===== */
 
 a {
-  color: $primaryColor
-  border-bottom: none;
+  color: $primaryColor;
+  border-bottom: 0px;
   text-decoration: none;
   transition: all 0.3s;
 }
 
 a:hover,
 a:focus {
-  color: $primaryColor
+  color: $primaryColor;
   border: 0;
   text-decoration: none;
 }
 
-/* ===== Crossed out links ===== */
+/* Crossed out links */
 a:hover {
-  color: $primaryColor
+  color: $primaryColor;
   position: relative;
 }
 

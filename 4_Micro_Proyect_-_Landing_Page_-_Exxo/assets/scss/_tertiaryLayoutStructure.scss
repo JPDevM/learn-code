@@ -1,10 +1,9 @@
-/* ===========================
-   TERTIEARY LAYOUT STRUCTURE 
-   (page regions, floats)
-============================ */
+@import 'variables';
 
-/* ===== Typewriter Effect ===== */
-/* https://css-tricks.com/snippets/css/typewriter-effect/ */
+/* ===== TERTIEARY LAYOUT STRUCTURE ===== */
+
+/* Typewriter Effect */
+// https://css-tricks.com/snippets/css/typewriter-effect/ */
 .home #content p:nth-child(1) {
   width: 12em;
   -webkit-animation: type 1s steps(40, end);
@@ -108,12 +107,12 @@
   }
 }
 
-/* ===== Prototyped section ===== */
+/* Prototyped section */
 section #prototipadoImg img {
   max-width: 50%;
 }
 
-/* ===== Contact & Quote & Work whith us section ===== */
+/* Contact & Quote & Work whith us section */
 #contactblock p {
   color: $primaryColor;
 }
@@ -225,7 +224,7 @@ section #prototipadoImg img {
   opacity: 0.5;
 }
 
-/* reCAPTCHA */
+// reCAPTCHA
 .g-recaptcha {
   display: inline-block;
 }
@@ -247,7 +246,7 @@ section #prototipadoImg img {
   color: red;
 }
 
-/* ===== We section ===== */
+/* We section */
 #we .title {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 5em;

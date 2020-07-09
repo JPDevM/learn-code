@@ -36,7 +36,7 @@ Book. You Don't Know JS: Types & Grammar: Kyle Simpson
 
 ### Sass
 
-preprocessor: [Koala](http://koala-app.com)
+Preprocessor: [Koala](http://koala-app.com)
 
 - [Sass official documentaction](https://sass-lang.com)
 - [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css)
