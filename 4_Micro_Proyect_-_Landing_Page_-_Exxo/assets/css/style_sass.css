@@ -1,4 +1,68 @@
+@charset "UTF-8";
 /* ===== GLOBAL SETTINGS ===== */
+.test {
+  /* boxShadowAndRadius */
+  box-shadow: 5px 5px 10px #000;
+  border-radius: 20px;
+  padding: 10px;
+  /* customStyle */
+  padding: 40px;
+  background-color: #000;
+  border: solid 5px red;
+  color: orange;
+  /* líneas custom CSS */
+}
+
+.otra-regla {
+  /* boxShadowAndRadius */
+  box-shadow: 5px 5px 10px #000;
+  border-radius: 20px;
+  padding: 10px;
+  /* customStyle */
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 10px white dotted;
+  color: olive;
+  /* líneas custom CSS */
+}
+
+.nueva-regla {
+  /* customStyle */
+  padding: 10px;
+  background-color: transparent;
+  border: solid 1px #000;
+  color: #fff;
+  /* líneas custom CSS */
+}
+
+.regla-01 {
+  /* customStyle */
+  padding: 10px;
+  background-color: transparent;
+  border: dashed 3px tomato;
+  color: #fff;
+  /* líneas custom CSS */
+  font-size: 30px;
+  color: #9b1010;
+  color: #fce1e1;
+  color: rgba(255, 99, 71, 0.5);
+  width: 26.6666666667%;
+}
+
+@media (min-width: 450px) {
+  header {
+    margin: 100px;
+  }
+}
+@media (min-width: 576px) {
+  body {
+    background-color: red;
+  }
+
+  nav {
+    padding: 30px;
+  }
+}
 a {
   color: #000;
   border-bottom: 0px;

@@ -1,6 +1,46 @@
-@import 'variables';
-
 /* ===== GLOBAL SETTINGS ===== */
+
+.test {
+  /* boxShadowAndRadius */
+  @include boxShadowAndRadius;
+  /* customStyle */
+  @include customStyle(40px, #000, (solid 5px red), orange);
+}
+
+.otra-regla {
+  /* boxShadowAndRadius */
+  @include boxShadowAndRadius;
+  /* customStyle */
+  @include customStyle(10px, #f2f2f2, (10px white dotted), olive);
+}
+
+.nueva-regla {
+  /* customStyle */
+  @include customStyle;
+}
+
+.regla-01 {
+  /* customStyle */
+  @include customStyle($border: dashed 3px tomato) {
+    font-size: 30px;
+    color: darken(#f59b9b, 45);
+    color: lighten(#f59b9b, 15);
+    color: rgba(tomato, 0.5);
+    width: percentage(320 / 1200);
+  }
+}
+
+@include media-breakpoint (450) {
+  header {
+    margin: 100px;
+  }
+}
+
+@include media-breakpoint (576) {
+  nav {
+    padding: 30px;
+  }
+}
 
 a {
   color: $primaryColor;
