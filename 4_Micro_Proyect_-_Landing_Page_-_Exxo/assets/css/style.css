@@ -79,7 +79,7 @@ img {
 ==================================== */
 
 body {
-  font-family: $secondaryFont;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .medium-paragraph {
@@ -219,7 +219,7 @@ header .exxo_icon {
 }
 
 #menu_bg .right ul li a {
-  font-family: $documentFont;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
@@ -241,7 +241,7 @@ header .exxo_icon {
 /* ===== Top content ===== */
 #main {
   margin-top: 8em;
-  font-family: $documentFont;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #main #content {
@@ -289,7 +289,7 @@ footer {
   padding-top: 2em;
   overflow: hidden;
   clear: both;
-  font-family: $documentFont;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #000;
   text-transform: uppercase;
   font-weight: bold;
@@ -585,7 +585,7 @@ section #prototipadoImg img {
   border-color: white;
   border-bottom: 2px solid #000;
   background-color: transparent;
-  font-family: $secondaryFont;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: medium;
@@ -599,7 +599,7 @@ section #prototipadoImg img {
 
 .reCAPTCHA-text {
   text-align: center;
-  font-family: $secondaryFont;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: xx-small;
@@ -616,7 +616,7 @@ section #prototipadoImg img {
 
 /* ===== We section ===== */
 #we .title {
-  font-family: $documentFont;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 5em;
   line-height: 1.5em;
   text-align: left;
@@ -626,7 +626,7 @@ section #prototipadoImg img {
   margin-bottom: 0px;
 }
 #we .subtitle {
-  font-family: $documentFont;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 2em;
   color: #000;
   text-transform: uppercase;
@@ -634,7 +634,7 @@ section #prototipadoImg img {
   margin-bottom: 0px;
 }
 #we p {
-  font-family: $secondaryFont;
+  font-family: 'Open Sans', sans-serif;
   text-align: right;
   font-size: 1em;
   color: #888;

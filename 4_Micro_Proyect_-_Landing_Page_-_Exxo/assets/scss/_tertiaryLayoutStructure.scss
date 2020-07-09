@@ -5,67 +5,47 @@
 /* Typewriter Effect */
 // https://css-tricks.com/snippets/css/typewriter-effect/ */
 .home {
-  #content p:nth-child(1) {
-    width: 12em;
-    -webkit-animation: type 1s steps(40, end);
-    animation: type 1s steps(40, end);
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
+  #content {
+    p {
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation: type 1s steps(40, end);
+      animation: type 1s steps(40, end);
 
-  #content p:nth-child(2) {
-    width: 13em;
-    opacity: 0;
-    -webkit-animation: type 1s steps(40, end);
-    animation: type 1s steps(40, end);
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
+      @for $i from 1 to 7 {
+        @if ($i > 1) {
+          &:nth-child(#{$i}) {
+            -webkit-animation-delay: #{$i}s;
+            animation-delay: #{$i}s;
+            opacity: 0;
+          }
+        }
+      }
 
-  #content p:nth-child(3) {
-    width: 14em;
-    opacity: 0;
-    -webkit-animation: type 1s steps(40, end);
-    animation: type 1s steps(40, end);
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
+      &:nth-child(1) {
+        width: 12em;
+      }
 
-  #content p:nth-child(4) {
-    width: 14em;
-    opacity: 0;
-    -webkit-animation: type 1s steps(40, end);
-    animation: type 1s steps(40, end);
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
+      &:nth-child(2) {
+        width: 13em;
+      }
 
-  #content p:nth-child(5) {
-    width: 14em;
-    opacity: 0;
-    -webkit-animation: type 1s steps(40, end);
-    animation: type 1s steps(40, end);
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
+      &:nth-child(3) {
+        width: 14em;
+      }
 
-  #content p:nth-child(6) {
-    width: 14em;
-    opacity: 0;
-    -webkit-animation: type 1s steps(40, end);
-    animation: type 1s steps(40, end);
-    -webkit-animation-delay: 5s;
-    animation-delay: 5s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+      &:nth-child(4) {
+        width: 14em;
+      }
+
+      &:nth-child(5) {
+        width: 14em;
+      }
+
+      &:nth-child(6) {
+        width: 14em;
+      }
+    }
   }
 }
 
@@ -178,24 +158,22 @@ section #prototipadoImg img {
     font-size: medium;
     color: $primaryColor;
     opacity: 0.5;
-  }
 
-  input[type]:invalid,
-  textarea:invalid {
-    color: red;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-  }
+    &:invalid {
+      color: red;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+    }
 
-  input[type]:focus,
-  textarea:focus {
-    opacity: 1 !important;
-    outline: none !important;
-    outline-width: 0 !important;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
+    &:focus {
+      opacity: 1 !important;
+      outline: none !important;
+      outline-width: 0 !important;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+    }
   }
 
   button {

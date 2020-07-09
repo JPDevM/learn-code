@@ -7,31 +7,30 @@ a {
   border-bottom: 0px;
   text-decoration: none;
   transition: all 0.3s;
-}
 
-a:hover,
-a:focus {
-  color: $primaryColor;
-  border: 0;
-  text-decoration: none;
-}
+  &:hover,
+  &:focus {
+    color: $primaryColor;
+    border: 0;
+    text-decoration: none;
+  }
 
-/* Crossed out links */
-a:hover {
-  color: $primaryColor;
-  position: relative;
-}
+  &:hover {
+    position: relative;
+  }
 
-a:hover:after {
-  border-bottom: 0.18em solid $primaryColor;
-  content: '';
-  width: calc(100% + 0.2em);
-  left: -0.1em;
-  margin-top: calc(0.18em / 2 * -1);
-  position: absolute;
-  right: 0;
-  top: 50%;
-  border-color: currentColor;
+  /* Crossed out links */
+  &:hover:after {
+    border-bottom: 0.18em solid $primaryColor;
+    content: '';
+    width: calc(100% + 0.2em);
+    left: -0.1em;
+    margin-top: calc(0.18em / 2 * -1);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border-color: currentColor;
+  }
 }
 
 img {
