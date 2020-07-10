@@ -1,0 +1,88 @@
+/* ===== GLOBAL SETTINGS ===== */
+a {
+  color: $primaryColor;
+  border-bottom: 0px;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $primaryColor;
+    border: 0;
+    text-decoration: none;
+  }
+
+  &:hover {
+    position: relative;
+  }
+
+  &:hover:after {
+    border-bottom: 0.18em solid $primaryColor;
+    content: '';
+    width: calc(100% + 0.2em);
+    left: -0.1em;
+    margin-top: calc(0.18em / 2 * -1);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border-color: currentColor;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+::-moz-selection {
+  background: $primaryColor;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primaryColor;
+  color: #fff;
+  text-shadow: none;
+}
+
+// .test {
+//   /* boxShadowAndRadius */
+//   @include boxShadowAndRadius;
+//   /* customStyle */
+//   @include customStyle(40px, #000, (solid 5px red), orange);
+// }
+
+// .otra-regla {
+//   /* boxShadowAndRadius */
+//   @include boxShadowAndRadius;
+//   /* customStyle */
+//   @include customStyle(10px, #f2f2f2, (10px white dotted), olive);
+// }
+
+// .nueva-regla {
+//   /* customStyle */
+//   @include customStyle;
+// }
+
+// .regla-01 {
+//   /* customStyle */
+//   @include customStyle($border: dashed 3px tomato) {
+//     font-size: 30px;
+//     color: darken(#f59b9b, 45);
+//     color: lighten(#f59b9b, 15);
+//     color: rgba(tomato, 0.5);
+//     width: percentage(320 / 1200);
+//   }
+// }
+
+// @include media-breakpoint (450) {
+//   header {
+//     margin: 100px;
+//   }
+// }
+
+// @include media-breakpoint (576) {
+//   nav {
+//     padding: 30px;
+//   }
+// }

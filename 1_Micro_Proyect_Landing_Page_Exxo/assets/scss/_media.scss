@@ -1,0 +1,144 @@
+@import 'variables';
+
+/* ==== Small devices (tablets, 768px and up) ==== */
+// si la pantalla tiene como mín 768px y la orientación está en orizontal
+@media (min-width: 768px) and (orientation: landscape) {
+  /* SECONDARY LAYOUT STRUCTURE */
+
+  /* Navbar inside */
+  #menu_bg {
+    .left {
+      font-size: 16px;
+    }
+
+    .right ul {
+      padding-top: 0.5em;
+
+      li a {
+        font-size: 2em;
+        line-height: 1.2em;
+      }
+    }
+  }
+
+  /* Footer */
+  footer {
+    .menu {
+      font-size: 2.8em;
+    }
+
+    .contact {
+      font-size: 1.2em;
+    }
+
+    .social {
+      font-size: 1.2em;
+    }
+
+    .full_logo {
+      font-size: 1.2em;
+    }
+  }
+
+  /* TERTIEARY LAYOUT STRUCTURE */
+  /*  Top content  */
+  #main #content p {
+    font-size: 2.8em;
+  }
+}
+
+/* ==== Medium devices (desktops, 992px and up) ==== */
+@media (min-width: 992px) {
+  /* SECONDARY LAYOUT STRUCTURE */
+  /* Navbar inside */
+  #menu_bg {
+    .left {
+      font-size: 18px;
+    }
+
+    .right ul {
+      padding-top: 0.5em;
+
+      li a {
+        font-size: 2.5em;
+        line-height: 1.1em;
+      }
+    }
+  }
+
+  /* Footer */
+  footer {
+    .menu {
+      font-size: 4.8em;
+    }
+
+    .contact {
+      font-size: 1.5em;
+    }
+
+    .social {
+      font-size: 1.5em;
+    }
+
+    .full_logo {
+      font-size: 1.5em;
+    }
+  }
+
+  /* TERTIEARY LAYOUT STRUCTURE */
+  /* Top content */
+  #main #content p {
+    font-size: 3em;
+  }
+
+  /* Contact & Quote & Work whith us section */
+  #contactblock .filters ul li {
+    font-size: 1.8em;
+  }
+}
+
+/* ==== Large devices (large desktops, 1200px and up) ==== */
+
+@media (min-width: 1200px) {
+  /* SECONDARY LAYOUT STRUCTURE */
+  /* Navbar inside */
+  #menu_bg {
+    .left {
+      font-size: 20px;
+    }
+
+    .right ul {
+      padding-top: 0.5em;
+
+      li a {
+        font-size: 3em;
+        line-height: 1em;
+      }
+    }
+  }
+
+  /* Footer */
+  footer {
+    .menu {
+      font-size: 5em;
+    }
+
+    .contact {
+      font-size: 1.5em;
+    }
+
+    .social {
+      font-size: 1.5em;
+    }
+
+    .full_logo {
+      font-size: 1.5em;
+    }
+  }
+
+  /* TERTIEARY LAYOUT STRUCTURE */
+  /* Top content */
+  #main #content p {
+    font-size: 4.8em;
+  }
+}

@@ -1,0 +1,41 @@
+@mixin customFont {
+  text-shadow: 1px 0px #000, 0.54px 0.84px #000, -0.41px 0.9px #000,
+    -0.98px 0.14px #000, -0.65px -0.75px #000, 0.28px -0.95px #000,
+    0.96px -0.27px #000;
+  // líneas custom CSS
+  @content;
+}
+
+// // Mixin no paramétrico
+// @mixin boxShadowAndRadius {
+// 	box-shadow: 5px 5px 10px #000;
+// 	border-radius: 20px;
+// 	padding: 10px;
+// }
+
+// // Mixin paramétrico
+// @mixin media-breakpoint ($breakpoint) {
+// 	@media (min-width: #{$breakpoint}px) {
+// 		// Custom - Se implementa siempre
+// 		@if ($breakpoint >= 576) {
+// 			body {
+// 				background-color: red;
+// 			}
+// 		}
+// 		// Contenido
+// 		@content;
+// 	}
+// }
+
+// @mixin customStyle($padding: 10px, $bgColor: transparent, $border: (solid 1px #000), $color: #fff) {
+// 	padding: $padding;
+// 	background-color: $bgColor;
+// 	border: $border;
+// 	color: $color;
+// 	/* líneas custom CSS */
+// 	@content;
+// }
+
+// text-shadow: 1px 0px #000, 0.54px 0.84px #000, -0.41px 0.9px #000,
+// -0.98px 0.14px #000, -0.65px -0.75px #000, 0.28px -0.95px #000,
+// 0.96px -0.27px #000;

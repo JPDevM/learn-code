@@ -1,0 +1,273 @@
+@import 'variables';
+
+/* ===== SECONDARY LAYOUT STRUCTURE ===== */
+/* Loader */
+
+header {
+  .exxo_icon {
+    width: 162px;
+    height: 44px;
+    background: url(../img/logo.png) left center no-repeat;
+    border: 0;
+    text-indent: 1;
+  }
+}
+
+/* Navbar */
+.navbar {
+  transition: all 0.6s;
+  backface-visibility: hidden;
+}
+
+#navbar-top {
+  background-color: $primaryColor;
+
+  button {
+    border: transparent;
+    border-color: transparent;
+  }
+
+  .nav-link {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    border: 0;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:focus {
+      color: #fff;
+      outline: 0;
+    }
+  }
+
+  .navbar-toggler {
+    &:focus {
+      background: none;
+      outline: 0;
+    }
+
+    span {
+      display: block;
+      width: 40px;
+      height: 6px;
+      margin: 6px auto;
+      background: white;
+      transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    &:hover span,
+    &:focus span {
+      background: #ccc;
+    }
+  }
+
+  // Rotate span
+  .navbar-toggler[aria-expanded='true'] span {
+    &:first-of-type {
+      transform: rotate(45deg) translate(12px, 12px);
+    }
+
+    &:nth-of-type(2) {
+      opacity: 0;
+    }
+
+    &:last-of-type {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+
+  .navbar-toggler[aria-expanded='false'] span {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* Navbar inside */
+#menu_bg {
+  .left {
+    width: 25%;
+    float: left;
+    font-size: 7px;
+
+    .contact,
+    .social,
+    a,
+    a:hover:after {
+      color: #fff;
+      text-transform: uppercase;
+      border-color: #fff;
+    }
+
+    .contact .address {
+      font-weight: bold;
+      p {
+        margin-top: 0;
+        line-height: normal;
+      }
+    }
+
+    .social a {
+      display: table;
+      font-weight: bold;
+      line-height: normal;
+    }
+  }
+
+  .right {
+    font-size: 2em;
+    line-height: 0.95em;
+    width: 75%;
+    float: right;
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      padding-top: 0.1em;
+      margin: 0;
+
+      li {
+        text-align: right;
+        a {
+          font-family: $documentFont;
+          font-weight: bold;
+          color: #fff;
+          text-transform: uppercase;
+
+          &:hover {
+            color: #fff;
+          }
+
+          &:hover:after {
+            border-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Top content */
+#main {
+  margin-top: 8em;
+  font-family: $documentFont;
+
+  #content {
+    margin: 0 auto;
+    text-align: left;
+
+    p {
+      @include customFont;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.5em;
+      font-weight: bold;
+      line-height: 0.8em;
+      letter-spacing: -0.04em;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    a {
+      color: $primaryColor;
+      text-shadow: none;
+
+      &:hover {
+        color: $primaryColor;
+        opacity: 1;
+      }
+
+      &:hover:after {
+        border-color: $primaryColor;
+      }
+    }
+
+    p::selection,
+    a::selection {
+      background-color: $primaryColor;
+      color: white;
+      line-height: normal;
+    }
+  }
+}
+
+/* Footer */
+footer {
+  padding-top: 2em;
+  overflow: hidden;
+  clear: both;
+  font-family: $documentFont;
+  color: $primaryColor;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  .thin {
+    font-weight: 100;
+  }
+
+  .menu {
+    font-size: 1.5em;
+    line-height: 0.8em;
+    letter-spacing: -0.04em;
+    margin-bottom: 30px;
+
+    p {
+      margin: 0;
+      color: #fff;
+      @include customFont;
+      overflow: hidden;
+    }
+
+    a {
+      color: $primaryColor;
+      text-shadow: none;
+
+      &:hover:after {
+        border-color: $primaryColor;
+      }
+    }
+  }
+
+  .contact {
+    font-size: 1em;
+    line-height: 1.2em;
+
+    p {
+      margin: 0;
+    }
+
+    .email {
+      margin-bottom: 2em;
+    }
+
+    .postal {
+      margin-bottom: 2em;
+    }
+  }
+
+  .social {
+    font-size: 1em;
+    line-height: 1.2em;
+    margin-bottom: 2em;
+
+    a {
+      display: table;
+      line-height: normal;
+    }
+  }
+
+  .full_logo {
+    font-size: 1em;
+    position: relative;
+  }
+
+  p::selection,
+  a::selection,
+  span::selection {
+    background-color: $primaryColor;
+    text-shadow: none;
+    overflow: hidden;
+  }
+}
