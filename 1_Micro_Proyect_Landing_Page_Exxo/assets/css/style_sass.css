@@ -121,6 +121,21 @@ header .exxo_icon {
   float: left;
   font-size: 7px;
 }
+@media screen and (min-width: 768px) {
+  #menu_bg .left {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #menu_bg .left {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #menu_bg .left {
+    font-size: 20px;
+  }
+}
 #menu_bg .left .contact,
 #menu_bg .left .social,
 #menu_bg .left a,
@@ -153,6 +168,21 @@ header .exxo_icon {
   padding-top: 0.1em;
   margin: 0;
 }
+@media screen and (min-width: 768px) {
+  #menu_bg .right ul {
+    padding-top: 0.5em;
+  }
+}
+@media screen and (min-width: 992px) {
+  #menu_bg .right ul {
+    padding-top: 0.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #menu_bg .right ul {
+    padding-top: 0.5em;
+  }
+}
 #menu_bg .right ul li {
   text-align: right;
 }
@@ -161,6 +191,24 @@ header .exxo_icon {
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  #menu_bg .right ul li a {
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+}
+@media screen and (min-width: 992px) {
+  #menu_bg .right ul li a {
+    font-size: 2.5em;
+    line-height: 1.1em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #menu_bg .right ul li a {
+    font-size: 3em;
+    line-height: 1em;
+  }
 }
 #menu_bg .right ul li a:hover {
   color: #fff;
@@ -227,6 +275,21 @@ footer .menu {
   letter-spacing: -0.04em;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  footer .menu {
+    font-size: 2.8em;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer .menu {
+    font-size: 4.8em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer .menu {
+    font-size: 5em;
+  }
+}
 footer .menu p {
   margin: 0;
   color: #fff;
@@ -244,6 +307,21 @@ footer .contact {
   font-size: 1em;
   line-height: 1.2em;
 }
+@media screen and (min-width: 768px) {
+  footer .contact {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer .contact {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer .contact {
+    font-size: 1.5em;
+  }
+}
 footer .contact p {
   margin: 0;
 }
@@ -258,6 +336,21 @@ footer .social {
   line-height: 1.2em;
   margin-bottom: 2em;
 }
+@media screen and (min-width: 768px) {
+  footer .social {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer .social {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer .social {
+    font-size: 1.5em;
+  }
+}
 footer .social a {
   display: table;
   line-height: normal;
@@ -265,6 +358,21 @@ footer .social a {
 footer .full_logo {
   font-size: 1em;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  footer .full_logo {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer .full_logo {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer .full_logo {
+    font-size: 1.5em;
+  }
 }
 footer p::selection,
 footer a::selection,
@@ -325,6 +433,21 @@ footer span::selection {
 .home #content p:nth-child(6) {
   width: 14em;
 }
+@media screen and (min-width: 768px) {
+  .home #content p {
+    font-size: 2.8em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .home #content p {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home #content p {
+    font-size: 4.8em;
+  }
+}
 
 @keyframes type {
   0% {
@@ -375,6 +498,11 @@ section #prototipadoImg img {
 }
 #contactblock .filters ul li {
   font-size: 1em;
+}
+@media screen and (min-width: 1200px) {
+  #contactblock .filters ul li {
+    font-size: 1.8em;
+  }
 }
 #contactblock .filters .contacts a {
   text-transform: uppercase;
@@ -515,117 +643,6 @@ section #prototipadoImg img {
 }
 #we div {
   padding: 0px !important;
-}
-
-/* ==== Small devices (tablets, 768px and up) ==== */
-@media (min-width: 768px) and (orientation: landscape) {
-  /* SECONDARY LAYOUT STRUCTURE */
-  /* Navbar inside */
-  #menu_bg .left {
-    font-size: 16px;
-  }
-  #menu_bg .right ul {
-    padding-top: 0.5em;
-  }
-  #menu_bg .right ul li a {
-    font-size: 2em;
-    line-height: 1.2em;
-  }
-
-  /* Footer */
-  footer .menu {
-    font-size: 2.8em;
-  }
-  footer .contact {
-    font-size: 1.2em;
-  }
-  footer .social {
-    font-size: 1.2em;
-  }
-  footer .full_logo {
-    font-size: 1.2em;
-  }
-
-  /* TERTIEARY LAYOUT STRUCTURE */
-  /*  Top content  */
-  #main #content p {
-    font-size: 2.8em;
-  }
-}
-/* ==== Medium devices (desktops, 992px and up) ==== */
-@media (min-width: 992px) {
-  /* SECONDARY LAYOUT STRUCTURE */
-  /* Navbar inside */
-  #menu_bg .left {
-    font-size: 18px;
-  }
-  #menu_bg .right ul {
-    padding-top: 0.5em;
-  }
-  #menu_bg .right ul li a {
-    font-size: 2.5em;
-    line-height: 1.1em;
-  }
-
-  /* Footer */
-  footer .menu {
-    font-size: 4.8em;
-  }
-  footer .contact {
-    font-size: 1.5em;
-  }
-  footer .social {
-    font-size: 1.5em;
-  }
-  footer .full_logo {
-    font-size: 1.5em;
-  }
-
-  /* TERTIEARY LAYOUT STRUCTURE */
-  /* Top content */
-  #main #content p {
-    font-size: 3em;
-  }
-
-  /* Contact & Quote & Work whith us section */
-  #contactblock .filters ul li {
-    font-size: 1.8em;
-  }
-}
-/* ==== Large devices (large desktops, 1200px and up) ==== */
-@media (min-width: 1200px) {
-  /* SECONDARY LAYOUT STRUCTURE */
-  /* Navbar inside */
-  #menu_bg .left {
-    font-size: 20px;
-  }
-  #menu_bg .right ul {
-    padding-top: 0.5em;
-  }
-  #menu_bg .right ul li a {
-    font-size: 3em;
-    line-height: 1em;
-  }
-
-  /* Footer */
-  footer .menu {
-    font-size: 5em;
-  }
-  footer .contact {
-    font-size: 1.5em;
-  }
-  footer .social {
-    font-size: 1.5em;
-  }
-  footer .full_logo {
-    font-size: 1.5em;
-  }
-
-  /* TERTIEARY LAYOUT STRUCTURE */
-  /* Top content */
-  #main #content p {
-    font-size: 4.8em;
-  }
 }
 
 /*# sourceMappingURL=style_sass.css.map */
