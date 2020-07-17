@@ -1,0 +1,29 @@
+.bg-dark {
+  background-color: #000 !important;
+}
+
+body {
+  background-color: black;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-link.active {
+  background-color: #000;
+  border: 0px;
+  border-bottom: #fff 1px solid;
+}
+
+.input-dark {
+  background-color: black;
+  color: white;
+  border: 0px;
+  border-radius: 0px;
+  border-bottom: 1px solid lightslategray;
+}
+
+/*# sourceMappingURL=style_sass.css.map */
