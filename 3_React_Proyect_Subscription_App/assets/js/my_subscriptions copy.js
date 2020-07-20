@@ -5,9 +5,9 @@ console.log(productsList);
 // Paso 3: Convinar 1 y 2 con 1 ejemplo
 // Paso 4: que salga el listado completo
 
-// Insert subscription
-function addSubs(parent, name, colorhexa, logoicon, description, price, days) {
-  let newSubs = `
+// Insert una subscription
+function addSub(parent, name, colorhexa, logoicon, description, price, days) {
+  let newSub = `
     <li id="card" class="my-2">
       <a href="">
         <div style="background-color:#${colorhexa}; border-radius: 0.2em;">
@@ -43,7 +43,7 @@ function addSubs(parent, name, colorhexa, logoicon, description, price, days) {
     </li>
   `;
 
-  parent.insertAdjacentHTML('beforeend', newSubs);
+  parent.insertAdjacentHTML('beforeend', newSub);
 }
 
 fetch('assets/js/data.json')
@@ -56,7 +56,7 @@ fetch('assets/js/data.json')
 
     for (let i = 0; i < 20; i++) {
       if (allSubscriptions[i].active == 'yes') {
-        addSubs(
+        addSub(
           productsList,
           allSubscriptions[i].name,
           allSubscriptions[i].colorhexa,
@@ -83,7 +83,7 @@ fetch('assets/js/data.json')
 //     let allSubscriptions = data.subscriptions;
 
 //     for (let i = 0; i < 20; i++) {
-//       addSubs(
+//       addSub(
 //         productsList,
 //         allSubscriptions[i].name,
 //         allSubscriptions[i].colorhexa,

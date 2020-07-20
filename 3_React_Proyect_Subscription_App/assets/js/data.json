@@ -2,7 +2,8 @@
   "subscriptions": [
     {
       "id": "1",
-      "active": "yes",
+      "active": true,
+      "popular": true,
       "name": "Spotify",
       "colorid": "17",
       "colorhexa": "55d656",
@@ -18,7 +19,8 @@
     },
     {
       "id": "2",
-      "active": "yes",
+      "active": true,
+      "popular": true,
       "name": "Netflix",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -34,7 +36,8 @@
     },
     {
       "id": "3",
-      "active": "yes",
+      "active": true,
+      "popular": true,
       "name": "Dribbble",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -50,7 +53,8 @@
     },
     {
       "id": "4",
-      "active": "yes",
+      "active": true,
+      "popular": false,
       "name": "Feedly",
       "colorid": "17",
       "colorhexa": "55d656",
@@ -66,7 +70,8 @@
     },
     {
       "id": "5",
-      "active": "no",
+      "active": true,
+      "popular": true,
       "name": "Dropbox",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -82,7 +87,8 @@
     },
     {
       "id": "6",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Evernote",
       "colorid": "16",
       "colorhexa": "52d471",
@@ -98,7 +104,8 @@
     },
     {
       "id": "7",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "iCloud",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -114,7 +121,8 @@
     },
     {
       "id": "8",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "G Google Apps for Work",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -130,7 +138,8 @@
     },
     {
       "id": "9",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Audible",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -146,7 +155,8 @@
     },
     {
       "id": "10",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "LinkedIn",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -162,7 +172,8 @@
     },
     {
       "id": "11",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Pocket",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -178,7 +189,8 @@
     },
     {
       "id": "12",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Squarespace",
       "colorid": "26",
       "colorhexa": "666666",
@@ -194,7 +206,8 @@
     },
     {
       "id": "13",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Wunderlist",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -210,7 +223,8 @@
     },
     {
       "id": "14",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "T-Mobile",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -226,7 +240,8 @@
     },
     {
       "id": "15",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Vodafone",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -242,7 +257,8 @@
     },
     {
       "id": "16",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "KPN",
       "colorid": "17",
       "colorhexa": "55d656",
@@ -258,7 +274,8 @@
     },
     {
       "id": "17",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Ziggo",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -274,7 +291,8 @@
     },
     {
       "id": "18",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Soundcloud",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -290,7 +308,8 @@
     },
     {
       "id": "19",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Xbox Live",
       "colorid": "17",
       "colorhexa": "55d656",
@@ -306,7 +325,8 @@
     },
     {
       "id": "20",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Playstation Plus",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -322,7 +342,8 @@
     },
     {
       "id": "21",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Instapaper",
       "colorid": "27",
       "colorhexa": "999999",
@@ -338,7 +359,8 @@
     },
     {
       "id": "22",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "HBO",
       "colorid": "27",
       "colorhexa": "999999",
@@ -354,7 +376,8 @@
     },
     {
       "id": "23",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Asana",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -370,7 +393,8 @@
     },
     {
       "id": "24",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "AT&T",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -386,7 +410,8 @@
     },
     {
       "id": "25",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Buffer",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -402,7 +427,8 @@
     },
     {
       "id": "26",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Codecademy",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -418,7 +444,8 @@
     },
     {
       "id": "27",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "DropIr",
       "colorid": "8",
       "colorhexa": "6a46ee",
@@ -434,7 +461,8 @@
     },
     {
       "id": "28",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "CloudApp",
       "colorid": "28",
       "colorhexa": "cccbcc",
@@ -450,7 +478,8 @@
     },
     {
       "id": "29",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "JumpShare",
       "colorid": "13",
       "colorhexa": "38e0e0",
@@ -466,7 +495,8 @@
     },
     {
       "id": "30",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Basecamp",
       "colorid": "17",
       "colorhexa": "55d656",
@@ -482,7 +512,8 @@
     },
     {
       "id": "31",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "GitHub",
       "colorid": "28",
       "colorhexa": "cccbcc",
@@ -498,7 +529,8 @@
     },
     {
       "id": "32",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "MailChimp",
       "colorid": "13",
       "colorhexa": "38e0e0",
@@ -514,7 +546,8 @@
     },
     {
       "id": "33",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Mastercard",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -530,7 +563,8 @@
     },
     {
       "id": "34",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Microsoft Office",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -546,7 +580,8 @@
     },
     {
       "id": "35",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Mixpanel",
       "colorid": "7",
       "colorhexa": "9646ee",
@@ -562,7 +597,8 @@
     },
     {
       "id": "36",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Salesforce",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -578,7 +614,8 @@
     },
     {
       "id": "37",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Slack",
       "colorid": "14",
       "colorhexa": "38deb2",
@@ -594,7 +631,8 @@
     },
     {
       "id": "38",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Shopify",
       "colorid": "18",
       "colorhexa": "75d757",
@@ -610,7 +648,8 @@
     },
     {
       "id": "39",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Strava",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -626,7 +665,8 @@
     },
     {
       "id": "40",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Trello",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -642,7 +682,8 @@
     },
     {
       "id": "41",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Typekit",
       "colorid": "21",
       "colorhexa": "cdcb2b",
@@ -658,7 +699,8 @@
     },
     {
       "id": "42",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Verizon",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -674,7 +716,8 @@
     },
     {
       "id": "43",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Vimeo",
       "colorid": "27",
       "colorhexa": "999999",
@@ -690,7 +733,8 @@
     },
     {
       "id": "44",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Zendesk",
       "colorid": "19",
       "colorhexa": "94d757",
@@ -706,7 +750,8 @@
     },
     {
       "id": "45",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Rabobank",
       "colorid": "7",
       "colorhexa": "9646ee",
@@ -722,7 +767,8 @@
     },
     {
       "id": "46",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "ING",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -738,7 +784,8 @@
     },
     {
       "id": "47",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "ABN Amro",
       "colorid": "16",
       "colorhexa": "52d471",
@@ -754,7 +801,8 @@
     },
     {
       "id": "48",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Menzis",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -770,7 +818,8 @@
     },
     {
       "id": "49",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Inshared",
       "colorid": "5",
       "colorhexa": "f048ef",
@@ -786,7 +835,8 @@
     },
     {
       "id": "50",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Nuon",
       "colorid": "6",
       "colorhexa": "c247ee",
@@ -802,7 +852,8 @@
     },
     {
       "id": "51",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Rochdale",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -818,7 +869,8 @@
     },
     {
       "id": "52",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "CZ",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -834,7 +886,8 @@
     },
     {
       "id": "53",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Marvel",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -850,7 +903,8 @@
     },
     {
       "id": "54",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Iconfinder",
       "colorid": "26",
       "colorhexa": "666666",
@@ -866,7 +920,8 @@
     },
     {
       "id": "55",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Intercom",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -882,7 +937,8 @@
     },
     {
       "id": "56",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "CJP",
       "colorid": "26",
       "colorhexa": "666666",
@@ -898,7 +954,8 @@
     },
     {
       "id": "57",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Cineville",
       "colorid": "26",
       "colorhexa": "666666",
@@ -914,7 +971,8 @@
     },
     {
       "id": "58",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Pathé",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -930,7 +988,8 @@
     },
     {
       "id": "59",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Tele2",
       "colorid": "26",
       "colorhexa": "666666",
@@ -946,7 +1005,8 @@
     },
     {
       "id": "60",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Timely",
       "colorid": "27",
       "colorhexa": "999999",
@@ -962,7 +1022,8 @@
     },
     {
       "id": "61",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "CloudUp",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -978,7 +1039,8 @@
     },
     {
       "id": "62",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "IZA",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -994,7 +1056,8 @@
     },
     {
       "id": "63",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Centraal Beheer",
       "colorid": "18",
       "colorhexa": "75d757",
@@ -1010,7 +1073,8 @@
     },
     {
       "id": "64",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "YNAB",
       "colorid": "27",
       "colorhexa": "999999",
@@ -1026,7 +1090,8 @@
     },
     {
       "id": "65",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Antagonist ",
       "colorid": "8",
       "colorhexa": "6a46ee",
@@ -1042,7 +1107,8 @@
     },
     {
       "id": "66",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "XS4ALL",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -1058,7 +1124,8 @@
     },
     {
       "id": "67",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "OV-chipkaart",
       "colorid": "4",
       "colorhexa": "f045c3",
@@ -1074,7 +1141,8 @@
     },
     {
       "id": "68",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Zilveren Kruis",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -1090,7 +1158,8 @@
     },
     {
       "id": "69",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "EON",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -1106,7 +1175,8 @@
     },
     {
       "id": "70",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Albert Heijn",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -1122,7 +1192,8 @@
     },
     {
       "id": "71",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Campaign Monitor",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -1138,7 +1209,8 @@
     },
     {
       "id": "72",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Eneco",
       "colorid": "3",
       "colorhexa": "e33b99",
@@ -1154,7 +1226,8 @@
     },
     {
       "id": "73",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Essent",
       "colorid": "4",
       "colorhexa": "f045c3",
@@ -1170,7 +1243,8 @@
     },
     {
       "id": "74",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "ANWB",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -1186,7 +1260,8 @@
     },
     {
       "id": "75",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Hulu",
       "colorid": "15",
       "colorhexa": "38de87",
@@ -1202,7 +1277,8 @@
     },
     {
       "id": "76",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Volkskrant",
       "colorid": "26",
       "colorhexa": "666666",
@@ -1218,7 +1294,8 @@
     },
     {
       "id": "77",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Teleagraaf",
       "colorid": "26",
       "colorhexa": "666666",
@@ -1234,7 +1311,8 @@
     },
     {
       "id": "78",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Algemeen Dagblad",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -1250,7 +1328,8 @@
     },
     {
       "id": "79",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Brabants Dagblad",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -1266,7 +1345,8 @@
     },
     {
       "id": "80",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Hema",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -1282,7 +1362,8 @@
     },
     {
       "id": "81",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Hello Fresh",
       "colorid": "18",
       "colorhexa": "75d757",
@@ -1298,7 +1379,8 @@
     },
     {
       "id": "82",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Creative Cloud",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -1314,7 +1396,8 @@
     },
     {
       "id": "83",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Apple Music",
       "colorid": "27",
       "colorhexa": "999999",
@@ -1330,7 +1413,8 @@
     },
     {
       "id": "84",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "NS",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -1346,7 +1430,8 @@
     },
     {
       "id": "85",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Twitch",
       "colorid": "7",
       "colorhexa": "9646ee",
@@ -1362,7 +1447,8 @@
     },
     {
       "id": "86",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Treehouse",
       "colorid": "19",
       "colorhexa": "94d757",
@@ -1378,7 +1464,8 @@
     },
     {
       "id": "87",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "500PX",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -1394,7 +1481,8 @@
     },
     {
       "id": "88",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "YouTube",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -1410,7 +1498,8 @@
     },
     {
       "id": "89",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Amazon",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -1426,7 +1515,8 @@
     },
     {
       "id": "90",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Flickr",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -1442,7 +1532,8 @@
     },
     {
       "id": "91",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Invision",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -1458,7 +1549,8 @@
     },
     {
       "id": "92",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Revue",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -1474,7 +1566,8 @@
     },
     {
       "id": "93",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Framer",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -1490,7 +1583,8 @@
     },
     {
       "id": "94",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Digital Ocean",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -1506,7 +1600,8 @@
     },
     {
       "id": "95",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Media Temple",
       "colorid": "26",
       "colorhexa": "666666",
@@ -1522,7 +1617,8 @@
     },
     {
       "id": "96",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Zapier",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -1538,7 +1634,8 @@
     },
     {
       "id": "97",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "JIRA",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -1554,7 +1651,8 @@
     },
     {
       "id": "98",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Moneybird",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -1570,7 +1668,8 @@
     },
     {
       "id": "99",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Tinder",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -1586,7 +1685,8 @@
     },
     {
       "id": "100",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Todoist",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -1602,7 +1702,8 @@
     },
     {
       "id": "101",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "EA Access",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -1618,7 +1719,8 @@
     },
     {
       "id": "102",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Google Drive",
       "colorid": "19",
       "colorhexa": "94d757",
@@ -1634,7 +1736,8 @@
     },
     {
       "id": "103",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Google Photos",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -1650,7 +1753,8 @@
     },
     {
       "id": "104",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Lightspeeds",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -1666,7 +1770,8 @@
     },
     {
       "id": "105",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Microsoft OneDrive",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -1682,7 +1787,8 @@
     },
     {
       "id": "106",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "FoxSports",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -1698,7 +1804,8 @@
     },
     {
       "id": "107",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Stack",
       "colorid": "8",
       "colorhexa": "6a46ee",
@@ -1714,7 +1821,8 @@
     },
     {
       "id": "108",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Exposure",
       "colorid": "28",
       "colorhexa": "cccbcc",
@@ -1730,7 +1838,8 @@
     },
     {
       "id": "109",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Telfort",
       "colorid": "8",
       "colorhexa": "6a46ee",
@@ -1746,7 +1855,8 @@
     },
     {
       "id": "110",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "FBTO",
       "colorid": "8",
       "colorhexa": "6a46ee",
@@ -1762,7 +1872,8 @@
     },
     {
       "id": "111",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Heroku",
       "colorid": "7",
       "colorhexa": "9646ee",
@@ -1778,7 +1889,8 @@
     },
     {
       "id": "112",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "TextExpander",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -1794,7 +1906,8 @@
     },
     {
       "id": "113",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Runkeeper",
       "colorid": "13",
       "colorhexa": "38e0e0",
@@ -1810,7 +1923,8 @@
     },
     {
       "id": "114",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Visa",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -1826,7 +1940,8 @@
     },
     {
       "id": "115",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Feedbin",
       "colorid": "27",
       "colorhexa": "999999",
@@ -1842,7 +1957,8 @@
     },
     {
       "id": "116",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "GoDaddy",
       "colorid": "13",
       "colorhexa": "38e0e0",
@@ -1858,7 +1974,8 @@
     },
     {
       "id": "117",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Jukely",
       "colorid": "7",
       "colorhexa": "9646ee",
@@ -1874,7 +1991,8 @@
     },
     {
       "id": "118",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Overcast",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -1890,7 +2008,8 @@
     },
     {
       "id": "119",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Three",
       "colorid": "27",
       "colorhexa": "999999",
@@ -1906,7 +2025,8 @@
     },
     {
       "id": "120",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "FitInn",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -1922,7 +2042,8 @@
     },
     {
       "id": "121",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Interpolis",
       "colorid": "14",
       "colorhexa": "38deb2",
@@ -1938,7 +2059,8 @@
     },
     {
       "id": "122",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Hartstichtin",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -1954,7 +2076,8 @@
     },
     {
       "id": "123",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Artsen zonder Grenzen",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -1970,7 +2093,8 @@
     },
     {
       "id": "124",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "ASN",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -1986,7 +2110,8 @@
     },
     {
       "id": "125",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Ditzo",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -2002,7 +2127,8 @@
     },
     {
       "id": "126",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "VGZ",
       "colorid": "17",
       "colorhexa": "55d656",
@@ -2018,7 +2144,8 @@
     },
     {
       "id": "127",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Nationale Nederlanden",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -2034,7 +2161,8 @@
     },
     {
       "id": "128",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Pearle",
       "colorid": "16",
       "colorhexa": "52d471",
@@ -2050,7 +2178,8 @@
     },
     {
       "id": "129",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Evides",
       "colorid": "13",
       "colorhexa": "38e0e0",
@@ -2066,7 +2195,8 @@
     },
     {
       "id": "130",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Unigarant",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -2082,7 +2212,8 @@
     },
     {
       "id": "131",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Delta Lloyd",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -2098,7 +2229,8 @@
     },
     {
       "id": "132",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Aegon",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -2114,7 +2246,8 @@
     },
     {
       "id": "133",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "SNS",
       "colorid": "6",
       "colorhexa": "c247ee",
@@ -2130,7 +2263,8 @@
     },
     {
       "id": "134",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "WWF",
       "colorid": "27",
       "colorhexa": "999999",
@@ -2146,7 +2280,8 @@
     },
     {
       "id": "135",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Backblaze",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -2162,7 +2297,8 @@
     },
     {
       "id": "136",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "EE",
       "colorid": "14",
       "colorhexa": "38deb2",
@@ -2178,7 +2314,8 @@
     },
     {
       "id": "137",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Online.net",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -2194,7 +2331,8 @@
     },
     {
       "id": "138",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Scaleway",
       "colorid": "6",
       "colorhexa": "c247ee",
@@ -2210,7 +2348,8 @@
     },
     {
       "id": "139",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "OVH",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -2226,7 +2365,8 @@
     },
     {
       "id": "140",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Fastmail",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -2242,7 +2382,8 @@
     },
     {
       "id": "141",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Dashlane",
       "colorid": "14",
       "colorhexa": "38deb2",
@@ -2258,7 +2399,8 @@
     },
     {
       "id": "142",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "1Password",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -2274,7 +2416,8 @@
     },
     {
       "id": "143",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Tripit",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -2290,7 +2433,8 @@
     },
     {
       "id": "144",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Lumosity",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -2306,7 +2450,8 @@
     },
     {
       "id": "145",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "New York Times",
       "colorid": "28",
       "colorhexa": "cccbcc",
@@ -2322,7 +2467,8 @@
     },
     {
       "id": "146",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Wall Street Journal",
       "colorid": "28",
       "colorhexa": "cccbcc",
@@ -2338,7 +2484,8 @@
     },
     {
       "id": "147",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Pandora",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -2354,7 +2501,8 @@
     },
     {
       "id": "148",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "WWE Network ",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -2370,7 +2518,8 @@
     },
     {
       "id": "149",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Plex ",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -2386,7 +2535,8 @@
     },
     {
       "id": "150",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Namecheap",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -2402,7 +2552,8 @@
     },
     {
       "id": "151",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Videoland",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -2418,7 +2569,8 @@
     },
     {
       "id": "152",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "GiffGaff",
       "colorid": "27",
       "colorhexa": "999999",
@@ -2434,7 +2586,8 @@
     },
     {
       "id": "153",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Virgin Mobile",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -2450,7 +2603,8 @@
     },
     {
       "id": "154",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "O2",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -2466,7 +2620,8 @@
     },
     {
       "id": "155",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Tesco Mobile",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -2482,7 +2637,8 @@
     },
     {
       "id": "156",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "AuthO",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -2498,7 +2654,8 @@
     },
     {
       "id": "157",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Codepen",
       "colorid": "27",
       "colorhexa": "999999",
@@ -2514,7 +2671,8 @@
     },
     {
       "id": "158",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Dreamhost",
       "colorid": "27",
       "colorhexa": "999999",
@@ -2530,7 +2688,8 @@
     },
     {
       "id": "159",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Harvest",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -2546,7 +2705,8 @@
     },
     {
       "id": "160",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Citi",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -2562,7 +2722,8 @@
     },
     {
       "id": "161",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Patreon",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -2578,7 +2739,8 @@
     },
     {
       "id": "162",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Help Scout",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -2594,7 +2756,8 @@
     },
     {
       "id": "163",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Gyroscope",
       "colorid": "27",
       "colorhexa": "999999",
@@ -2610,7 +2773,8 @@
     },
     {
       "id": "164",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Sky",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -2626,7 +2790,8 @@
     },
     {
       "id": "165",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "NHS",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -2642,7 +2807,8 @@
     },
     {
       "id": "166",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Barclays",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -2658,7 +2824,8 @@
     },
     {
       "id": "167",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Scottish Power",
       "colorid": "18",
       "colorhexa": "75d757",
@@ -2674,7 +2841,8 @@
     },
     {
       "id": "168",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Affinity Water ",
       "colorid": "13",
       "colorhexa": "38e0e0",
@@ -2690,7 +2858,8 @@
     },
     {
       "id": "169",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Linda",
       "colorid": "27",
       "colorhexa": "999999",
@@ -2706,7 +2875,8 @@
     },
     {
       "id": "170",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Deezer",
       "colorid": "27",
       "colorhexa": "999999",
@@ -2722,7 +2892,8 @@
     },
     {
       "id": "171",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Google Play Music",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -2738,7 +2909,8 @@
     },
     {
       "id": "172",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Bank of America",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -2754,7 +2926,8 @@
     },
     {
       "id": "173",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Amazon AWS",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -2770,7 +2943,8 @@
     },
     {
       "id": "174",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Google Domains",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -2786,7 +2960,8 @@
     },
     {
       "id": "175",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "American Express",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -2802,7 +2977,8 @@
     },
     {
       "id": "176",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Starz",
       "colorid": "26",
       "colorhexa": "666666",
@@ -2818,7 +2994,8 @@
     },
     {
       "id": "177",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Viaplay",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -2834,7 +3011,8 @@
     },
     {
       "id": "178",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Cox",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -2850,7 +3028,8 @@
     },
     {
       "id": "179",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Bear",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -2866,7 +3045,8 @@
     },
     {
       "id": "180",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Pinboard",
       "colorid": "8",
       "colorhexa": "6a46ee",
@@ -2882,7 +3062,8 @@
     },
     {
       "id": "181",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Cloak",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -2898,7 +3079,8 @@
     },
     {
       "id": "182",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Setapp",
       "colorid": "7",
       "colorhexa": "9646ee",
@@ -2914,7 +3096,8 @@
     },
     {
       "id": "183",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Virgin Media",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -2930,7 +3113,8 @@
     },
     {
       "id": "184",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Loot Crate",
       "colorid": "27",
       "colorhexa": "999999",
@@ -2946,7 +3130,8 @@
     },
     {
       "id": "185",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "My Geek Box",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -2962,7 +3147,8 @@
     },
     {
       "id": "186",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Boxcryptor",
       "colorid": "18",
       "colorhexa": "75d757",
@@ -2978,7 +3164,8 @@
     },
     {
       "id": "187",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Orange",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -2994,7 +3181,8 @@
     },
     {
       "id": "188",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Runtastic",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -3010,7 +3198,8 @@
     },
     {
       "id": "189",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Bookmate",
       "colorid": "27",
       "colorhexa": "999999",
@@ -3026,7 +3215,8 @@
     },
     {
       "id": "190",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Backblaze",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -3042,7 +3232,8 @@
     },
     {
       "id": "191",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Ocado",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -3058,7 +3249,8 @@
     },
     {
       "id": "192",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "BT (British Telecom)",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -3074,7 +3266,8 @@
     },
     {
       "id": "193",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Match.com",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -3090,7 +3283,8 @@
     },
     {
       "id": "194",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Discover",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -3106,7 +3300,8 @@
     },
     {
       "id": "195",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Chase",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -3122,7 +3317,8 @@
     },
     {
       "id": "196",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Cancer Research UK",
       "colorid": "7",
       "colorhexa": "9646ee",
@@ -3138,7 +3334,8 @@
     },
     {
       "id": "197",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Firebase",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -3154,7 +3351,8 @@
     },
     {
       "id": "198",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "The National Lottery",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -3170,7 +3368,8 @@
     },
     {
       "id": "199",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Hootsuite",
       "colorid": "26",
       "colorhexa": "666666",
@@ -3186,7 +3385,8 @@
     },
     {
       "id": "200",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "ExpressVPN",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -3202,7 +3402,8 @@
     },
     {
       "id": "201",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "MacStories",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -3218,7 +3419,8 @@
     },
     {
       "id": "202",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Pushbullet",
       "colorid": "18",
       "colorhexa": "75d757",
@@ -3234,7 +3436,8 @@
     },
     {
       "id": "203",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Tidal",
       "colorid": "26",
       "colorhexa": "666666",
@@ -3250,7 +3453,8 @@
     },
     {
       "id": "204",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Last Pass",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -3266,7 +3470,8 @@
     },
     {
       "id": "205",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Xfinity",
       "colorid": "28",
       "colorhexa": "cccbcc",
@@ -3282,7 +3487,8 @@
     },
     {
       "id": "206",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "RescueTime",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -3298,7 +3504,8 @@
     },
     {
       "id": "207",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Greenpeace",
       "colorid": "17",
       "colorhexa": "55d656",
@@ -3314,7 +3521,8 @@
     },
     {
       "id": "208",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Headspace",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -3330,7 +3538,8 @@
     },
     {
       "id": "209",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Graze",
       "colorid": "28",
       "colorhexa": "cccbcc",
@@ -3346,7 +3555,8 @@
     },
     {
       "id": "210",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Red Cross",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -3362,7 +3572,8 @@
     },
     {
       "id": "211",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Ebay",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -3378,7 +3589,8 @@
     },
     {
       "id": "212",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Put.io",
       "colorid": "28",
       "colorhexa": "cccbcc",
@@ -3394,7 +3606,8 @@
     },
     {
       "id": "213",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Comcast",
       "colorid": "27",
       "colorhexa": "999999",
@@ -3410,7 +3623,8 @@
     },
     {
       "id": "214",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Hover",
       "colorid": "14",
       "colorhexa": "38deb2",
@@ -3426,7 +3640,8 @@
     },
     {
       "id": "215",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Windows",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -3442,7 +3657,8 @@
     },
     {
       "id": "216",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Trakt",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -3458,7 +3674,8 @@
     },
     {
       "id": "217",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Private Internet Access",
       "colorid": "18",
       "colorhexa": "75d757",
@@ -3474,7 +3691,8 @@
     },
     {
       "id": "218",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Sketch",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -3490,7 +3708,8 @@
     },
     {
       "id": "219",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "National Geographic",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -3506,7 +3725,8 @@
     },
     {
       "id": "220",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "iTunes Match",
       "colorid": "26",
       "colorhexa": "666666",
@@ -3522,7 +3742,8 @@
     },
     {
       "id": "221",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Sleep Cycle",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -3538,7 +3759,8 @@
     },
     {
       "id": "222",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "Amazon Prime",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -3554,7 +3776,8 @@
     },
     {
       "id": "223",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Skype",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -3570,7 +3793,8 @@
     },
     {
       "id": "224",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "ASOS",
       "colorid": "27",
       "colorhexa": "999999",
@@ -3586,7 +3810,8 @@
     },
     {
       "id": "225",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Audi",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -3602,7 +3827,8 @@
     },
     {
       "id": "226",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Lynda",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -3618,7 +3844,8 @@
     },
     {
       "id": "227",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Apple Developer Program",
       "colorid": "28",
       "colorhexa": "cccbcc",
@@ -3634,7 +3861,8 @@
     },
     {
       "id": "228",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Blizzard Entertainment",
       "colorid": "9",
       "colorhexa": "3f46ed",
@@ -3650,7 +3878,8 @@
     },
     {
       "id": "229",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "LX Gesetze",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -3666,7 +3895,8 @@
     },
     {
       "id": "230",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "TeuxDeux",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -3682,7 +3912,8 @@
     },
     {
       "id": "231",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Crash Plan",
       "colorid": "18",
       "colorhexa": "75d757",
@@ -3698,7 +3929,8 @@
     },
     {
       "id": "232",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Fasthosts",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -3714,7 +3946,8 @@
     },
     {
       "id": "233",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Thames Water",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -3730,7 +3963,8 @@
     },
     {
       "id": "234",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Aviva Insurance",
       "colorid": "8",
       "colorhexa": "6a46ee",
@@ -3746,7 +3980,8 @@
     },
     {
       "id": "235",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Notion",
       "colorid": "27",
       "colorhexa": "999999",
@@ -3762,7 +3997,8 @@
     },
     {
       "id": "236",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "KIN Calendar",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -3778,11 +4014,12 @@
     },
     {
       "id": "237",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Medium",
       "colorid": "14",
       "colorhexa": "38deb2",
-      "logoicon": "fa-medium",
+      "logoicon": null,
       "logoarchive": null,
       "description": null,
       "price": null,
@@ -3794,7 +4031,8 @@
     },
     {
       "id": "238",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Blendle",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -3810,7 +4048,8 @@
     },
     {
       "id": "239",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Bluehost",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -3826,7 +4065,8 @@
     },
     {
       "id": "240",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Grouvee",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -3842,7 +4082,8 @@
     },
     {
       "id": "241",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Curology",
       "colorid": "28",
       "colorhexa": "cccbcc",
@@ -3858,7 +4099,8 @@
     },
     {
       "id": "242",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Care of",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -3874,7 +4116,8 @@
     },
     {
       "id": "243",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Pure Gym",
       "colorid": "14",
       "colorhexa": "38deb2",
@@ -3890,7 +4133,8 @@
     },
     {
       "id": "244",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "123 Reg",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -3906,7 +4150,8 @@
     },
     {
       "id": "245",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Oyster Card",
       "colorid": "7",
       "colorhexa": "9646ee",
@@ -3922,7 +4167,8 @@
     },
     {
       "id": "246",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "WiseStamp",
       "colorid": "13",
       "colorhexa": "38e0e0",
@@ -3938,7 +4184,8 @@
     },
     {
       "id": "247",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "TunnelBear",
       "colorid": "21",
       "colorhexa": "cdcb2b",
@@ -3954,7 +4201,8 @@
     },
     {
       "id": "248",
-      "active": "no",
+      "active": false,
+      "popular": true,
       "name": "iTunes Store",
       "colorid": "5",
       "colorhexa": "f048ef",
@@ -3970,7 +4218,8 @@
     },
     {
       "id": "249",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "The Washington Post",
       "colorid": "28",
       "colorhexa": "cccbcc",
@@ -3986,7 +4235,8 @@
     },
     {
       "id": "250",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Reddit",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -4002,7 +4252,8 @@
     },
     {
       "id": "251",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "N26",
       "colorid": "13",
       "colorhexa": "38e0e0",
@@ -4018,7 +4269,8 @@
     },
     {
       "id": "252",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Revolut",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -4034,7 +4286,8 @@
     },
     {
       "id": "253",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Hostinger",
       "colorid": "7",
       "colorhexa": "9646ee",
@@ -4050,7 +4303,8 @@
     },
     {
       "id": "254",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Apple App Store",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -4066,7 +4320,8 @@
     },
     {
       "id": "255",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "JetBrains",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -4082,7 +4337,8 @@
     },
     {
       "id": "256",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Crunchyroll",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -4098,7 +4354,8 @@
     },
     {
       "id": "257",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Minecraft Realms",
       "colorid": "17",
       "colorhexa": "55d656",
@@ -4114,7 +4371,8 @@
     },
     {
       "id": "258",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Ulysses",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -4130,7 +4388,8 @@
     },
     {
       "id": "259",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "COC",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -4146,7 +4405,8 @@
     },
     {
       "id": "260",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "GroenLinks",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -4162,7 +4422,8 @@
     },
     {
       "id": "261",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Klaverblad Verzekeringen",
       "colorid": "17",
       "colorhexa": "55d656",
@@ -4178,7 +4439,8 @@
     },
     {
       "id": "262",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Linode",
       "colorid": "18",
       "colorhexa": "75d757",
@@ -4194,7 +4456,8 @@
     },
     {
       "id": "263",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Telenet",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -4210,7 +4473,8 @@
     },
     {
       "id": "264",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Proximus",
       "colorid": "7",
       "colorhexa": "9646ee",
@@ -4226,7 +4490,8 @@
     },
     {
       "id": "265",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Mobile Vikings",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -4242,7 +4507,8 @@
     },
     {
       "id": "266",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "VSCO X",
       "colorid": "27",
       "colorhexa": "999999",
@@ -4258,7 +4524,8 @@
     },
     {
       "id": "267",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "CloudFlare",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -4274,7 +4541,8 @@
     },
     {
       "id": "268",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "AnyList",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -4290,7 +4558,8 @@
     },
     {
       "id": "269",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Bell",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -4306,7 +4575,8 @@
     },
     {
       "id": "270",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Telus",
       "colorid": "7",
       "colorhexa": "9646ee",
@@ -4322,7 +4592,8 @@
     },
     {
       "id": "271",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Parallels",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -4338,7 +4609,8 @@
     },
     {
       "id": "272",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Nest",
       "colorid": "13",
       "colorhexa": "38e0e0",
@@ -4354,7 +4626,8 @@
     },
     {
       "id": "273",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "24-Hours Fitness",
       "colorid": "24",
       "colorhexa": "e24923",
@@ -4370,7 +4643,8 @@
     },
     {
       "id": "274",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "News Blur",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -4386,7 +4660,8 @@
     },
     {
       "id": "275",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Parcel",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -4402,7 +4677,8 @@
     },
     {
       "id": "276",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Adobe XD",
       "colorid": "5",
       "colorhexa": "f048ef",
@@ -4418,7 +4694,8 @@
     },
     {
       "id": "277",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Rogers",
       "colorid": "1",
       "colorhexa": "ee3f43",
@@ -4434,7 +4711,8 @@
     },
     {
       "id": "278",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Envato",
       "colorid": "17",
       "colorhexa": "55d656",
@@ -4450,7 +4728,8 @@
     },
     {
       "id": "279",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Inoreader",
       "colorid": "13",
       "colorhexa": "38e0e0",
@@ -4466,7 +4745,8 @@
     },
     {
       "id": "280",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Ooma",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -4482,7 +4762,8 @@
     },
     {
       "id": "281",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Sprint",
       "colorid": "22",
       "colorhexa": "fbbc2d",
@@ -4498,7 +4779,8 @@
     },
     {
       "id": "282",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Fortis BC",
       "colorid": "21",
       "colorhexa": "cdcb2b",
@@ -4514,7 +4796,8 @@
     },
     {
       "id": "283",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "BC Hydro",
       "colorid": "18",
       "colorhexa": "75d757",
@@ -4530,7 +4813,8 @@
     },
     {
       "id": "284",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Movistar",
       "colorid": "13",
       "colorhexa": "38e0e0",
@@ -4546,7 +4830,8 @@
     },
     {
       "id": "285",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Blinkist",
       "colorid": "15",
       "colorhexa": "38de87",
@@ -4562,7 +4847,8 @@
     },
     {
       "id": "286",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Mijndomein",
       "colorid": "7",
       "colorhexa": "9646ee",
@@ -4578,7 +4864,8 @@
     },
     {
       "id": "287",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Figma",
       "colorid": "7",
       "colorhexa": "9646ee",
@@ -4594,7 +4881,8 @@
     },
     {
       "id": "288",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Apple TV+",
       "colorid": "28",
       "colorhexa": "cccbcc",
@@ -4610,7 +4898,8 @@
     },
     {
       "id": "289",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Apple Arcade",
       "colorid": "28",
       "colorhexa": "cccbcc",
@@ -4626,7 +4915,8 @@
     },
     {
       "id": "290",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Allianz",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -4642,7 +4932,8 @@
     },
     {
       "id": "291",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "NordVPN",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -4658,7 +4949,8 @@
     },
     {
       "id": "292",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Disney+",
       "colorid": "12",
       "colorhexa": "45c5ef",
@@ -4674,7 +4966,8 @@
     },
     {
       "id": "293",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Principle",
       "colorid": "6",
       "colorhexa": "c247ee",
@@ -4690,7 +4983,8 @@
     },
     {
       "id": "294",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "VanMoof",
       "colorid": "27",
       "colorhexa": "999999",
@@ -4706,7 +5000,8 @@
     },
     {
       "id": "295",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Darkroom",
       "colorid": "5",
       "colorhexa": "f048ef",
@@ -4722,7 +5017,8 @@
     },
     {
       "id": "296",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "IconJar",
       "colorid": "11",
       "colorhexa": "4299ef",
@@ -4738,7 +5034,8 @@
     },
     {
       "id": "297",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Voetbal International",
       "colorid": "2",
       "colorhexa": "e33c6c",
@@ -4754,7 +5051,8 @@
     },
     {
       "id": "298",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Swapfiets",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -4770,7 +5068,8 @@
     },
     {
       "id": "299",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Spendee",
       "colorid": "15",
       "colorhexa": "38de87",
@@ -4786,7 +5085,8 @@
     },
     {
       "id": "300",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Bung",
       "colorid": "10",
       "colorhexa": "3f6eee",
@@ -4802,7 +5102,8 @@
     },
     {
       "id": "301",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Duolingo",
       "colorid": "18",
       "colorhexa": "75d757",
@@ -4818,7 +5119,8 @@
     },
     {
       "id": "302",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Vandebron",
       "colorid": "27",
       "colorhexa": "999999",
@@ -4834,7 +5136,8 @@
     },
     {
       "id": "303",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "NLZiet",
       "colorid": "23",
       "colorhexa": "e97721",
@@ -4850,7 +5153,8 @@
     },
     {
       "id": "304",
-      "active": "no",
+      "active": false,
+      "popular": false,
       "name": "Musixmatch",
       "colorid": "24",
       "colorhexa": "e24923",
