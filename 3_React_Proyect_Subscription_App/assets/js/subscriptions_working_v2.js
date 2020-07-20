@@ -62,29 +62,29 @@ function addSubWithPrice(
 }
 
 // Insert a subscription without price
-function addSub(parent, data) {
+function addSub(parent, name, colorhexa, logoicon, active) {
   try {
     let newSub = `
       <li id="card" class="my-2">
         <a href="">
-          <div style="background-color:#${data.colorhexa}; border-radius: 0.2em; padding: 0 15px;">
-
-            <div class="row align-items-center" style="color: white">
-              <div class="col-3">
-                <i class="fa ${data.logoicon || 'fa-spotify'} my-2" style="font-size: 2em;"></i>
+          <div style="background-color:#${colorhexa}; border-radius: 0.2em;">
+            <div class="row" style="color: white">
+              <div class="col-2">
+                <i class="fa ${logoicon || 'fa-spotify'} m-2" style="font-size: 2em;"></i>
               </div>
-
               <div class="col-6">
-                <p class="m-0 text-truncate"><strong>${data.name}</strong></p>
+                <div class="row">
+                  <p class="m-0" style="line-height: 45px;"><strong>${name}</strong></p>
+                </div>
               </div>
-
-              <div class="col-3">
-                <p class="text-right m-0">
-                  <i class="fa ${ data.active ? 'fa-check' : 'fa-plus' }" aria-hidden="true"></i>
-                </p>
+              <div class="col-4">
+                <div class="row">
+                  <p class="text-right m-0" style="line-height: 45px;">
+                    <i class="fa ${ active ? 'fa-check' : 'fa-plus' }" aria-hidden="true"></i>
+                  </p>
+                </div>
               </div>
             </div>
-
           </div>
         </a>
       </li>
@@ -104,16 +104,53 @@ fetch('assets/js/data.json')
     return response.json();
   })
   .then(function (data) {
-    let allSubscriptionsData = data.subscriptions;
+    let allSubscriptions = data.subscriptions;
     let activeSubscriptions = data.subscriptions;
     let popSubscriptions = data.subscriptions;
 
-    console.log(allSubscriptionsData);
+    console.log(allSubscriptions);
 
-    for (let i = 0; i < allSubscriptionsData.length; i++) {
+    for (let i = 0; i < 20; i++) {
       // Add ALL subsctiption
-        addSub(allSubsList, allSubscriptionsData[i]);
-    }
+        addSub(
+          allSubsList,
+          allSubscriptions[i].name,
+          allSubscriptions[i].colorhexa,
+          allSubscriptions[i].logoicon,
+          allSubscriptions[i].active
+        );
 
+      // Add only ACTIVE subscription
+      /*
+        mySubsList !== null
+        Validar que el elemento HTML exista y ahí si insertarle el contenido
+      */ 
+      if (activeSubscriptions[i].active) {
+        addSubWithPrice(
+          mySubsList,
+          activeSubscriptions[i].name,
+          activeSubscriptions[i].colorhexa,
+          activeSubscriptions[i].logoicon,
+          activeSubscriptions[i].description,
+          activeSubscriptions[i].price,
+          '2 días'
+        );
+      }
+
+      // Add only POPULAR subscription
+      if (popSubscriptions[i].active) {
+        addSub(
+          popSubsList,
+          popSubscriptions[i].name,
+          popSubscriptions[i].colorhexa,
+          popSubscriptions[i].logoicon,
+          popSubscriptions[i].active
+        );
+      }
+    }
   });
 
+
+// parent.insertAdjacentHTML('berofeend', allSubscriptions);
+// parent.insertAdjacentHTML('berofeend', activeSubscriptions);
+// parent.insertAdjacentHTML('berofeend', popSubscriptions);

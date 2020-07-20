@@ -15,7 +15,8 @@
       "cicle": null,
       "long": null,
       "notification": null,
-      "currency": null
+      "currency": null,
+      "style": ["flash", "white", "black"]
     },
     {
       "id": "2",
@@ -32,7 +33,8 @@
       "cicle": null,
       "long": null,
       "notification": null,
-      "currency": null
+      "currency": null,
+      "style": ["flash", "white", "black"]
     },
     {
       "id": "3",
