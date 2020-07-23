@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Custom Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Indie+Flower&family=Nunito:wght@400&family=Open+Sans:wght@400&family=Raleway:wght@400&family=Roboto+Mono:wght@400&display=swap');
+  </style>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -31,7 +33,9 @@
       <span class="navbar-text text-white">
         Settings
       </span>
-      <a></a>
+      <a style="opacity: 0%;">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+      </a>
     </nav>
   </header>
 
@@ -39,98 +43,225 @@
     <section class="my-2">
       <div class="container-fluid">
         <div class="row">
-          <div class="col">
+
+
+          <!-- General -->
+          <div class="col-12">
+            <p class="text-white-50 mb-0 mt-4 text-uppercase"><small>General</small></p>
+          </div>
+
+          <!-- <div class="col-12 bg-dark-light border-setting-top">
+            <a href="">
+              <div class="row align-items-center my-2">
+                <div class=" col-10 text-white text-truncate">
+                  <p class="my-0">Seguridad</p>
+                </div>
+                <div class="col-2 text-white-50 text-right">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </div>
+            </a>
+          </div> -->
+
+          <div class="col-12 bg-dark-light border-setting-top">
             <form>
-
-              <div class="row">
-                <div class="col">
-                  <p class="text-white-50 mb-0 mt-3"><small>General</small></p>
-                </div>
+              <div class="form-check my-2 px-0 text-white">
+                <input class="form-check-input custom-control-imput" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Synchronization in iCloud
+                </label>
               </div>
-
-              <div class="form-group my-0">
-                <select class="custom-select text-right input-dark" id="inlineFormCustomSelect01">
-                  <option selected>Select</option>
-                  <option value="1">Monthly</option>
-                  <option value="2">Weekly</option>
-                  <option value="3">annual</option>
-                </select>
-              </div>
-
-              <div class="form-group my-0">
-                <select class="custom-select text-right input-dark" id="inlineFormCustomSelect01">
-                  <option selected>Select</option>
-                  <option value="1">Monthly</option>
-                  <option value="2">Weekly</option>
-                  <option value="3">annual</option>
-                </select>
-              </div>
-
-              <div class="row">
-                <div class="col">
-                  <p class="text-white-50 mb-0 mt-3"><small>My subscriptions</small></p>
-                </div>
-              </div>
-
-              <div class="form-group my-0">
-                <select class="custom-select text-right input-dark" id="inlineFormCustomSelect01">
-                  <option selected>Select</option>
-                  <option value="1">Monthly</option>
-                  <option value="2">Weekly</option>
-                  <option value="3">annual</option>
-                </select>
-              </div>
-
-              <div class="form-group my-0">
-                <select class="custom-select text-right input-dark" id="inlineFormCustomSelect01">
-                  <option selected>Select</option>
-                  <option value="1">Monthly</option>
-                  <option value="2">Weekly</option>
-                  <option value="3">annual</option>
-                </select>
-              </div>
-
-              <div class="form-group my-0">
-                <select class="custom-select text-right input-dark" id="inlineFormCustomSelect01">
-                  <option selected>Select</option>
-                  <option value="1">Monthly</option>
-                  <option value="2">Weekly</option>
-                  <option value="3">annual</option>
-                </select>
-              </div>
-
-              <div class="form-group my-0">
-                <select class="custom-select text-right input-dark" id="inlineFormCustomSelect02">
-                  <option selected>Select</option>
-                  <option value="1">1 day before</option>
-                  <option value="2">3 days before</option>
-                  <option value="3">1 week before</option>
-                  <option value="4">1 month before</option>
-                </select>
-              </div>
-
-              <div class="row">
-                <div class="col">
-                  <p class="text-white-50 mb-0 mt-3"><small>Design</small></p>
-                </div>
-              </div>
-
-              <div class="form-group my-0">
-                <select class="custom-select text-right input-dark" id="inlineFormCustomSelect02">
-                  <option selected>Select</option>
-                  <option value="1">$</option>
-                  <option value="2">€</option>
-                  <option value="3">etc</option>
-                  <option value="4">etc 2</option>
-                </select>
-              </div>
-
             </form>
           </div>
+
+          <div class="col-12 py-2 text-white border-setting-top text-truncate">
+            <a href="">
+              <p class="my-0 text-primary text-truncate">Sync to iCloud now</p>
+            </a>
+          </div>
+
+          <div class="col-12 py-2 text-white border-setting-top text-truncate">
+            <p class="my-0 text-white-50 text-truncate">
+              <small>Last synchronization on July 17, 2020 at 3:07 p.m.</small>
+            </p>
+          </div>
+
+
+          <!-- My subscriptions -->
+          <div class="col-12">
+            <p class="text-white-50 mb-0 mt-4 text-uppercase"><small>My subscriptions</small></p>
+          </div>
+
+          <div class="col-12 bg-dark-light border-setting-top">
+            <a href="setting_mySubscriptions_order.html">
+              <div class="row align-items-center my-2">
+                <div class=" col-7 text-white text-truncate">
+                  <p class="my-0">Sort Subscriptions by</p>
+                </div>
+                <div class="col-5 text-white-50 text-right">
+                  <p class="my-0 text-truncate">Fecha de Pago<i class="fa fa-angle-right ml-2" aria-hidden="true"></i>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 bg-dark-light border-setting-top">
+            <a href="/setting_mySubscriptions_total.html">
+              <div class="row align-items-center my-2">
+                <div class=" col-7 text-white text-truncate">
+                  <p class="my-0">See Total as</p>
+                </div>
+                <div class="col-5 text-white-50 text-right">
+                  <p class="my-0 text-truncate">Average Expenses<i class="fa fa-angle-right ml-2"
+                      aria-hidden="true"></i>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 bg-dark-light border-setting-top  border-setting-bottom">
+            <a href="/setting_mySubscriptions_currency.html">
+              <div class="row align-items-center my-2">
+                <div class=" col-7 text-white text-truncate">
+                  <p class="my-0">Moneda Predeteminada</p>
+                </div>
+                <div class="col-5 text-white-50 text-right">
+                  <p class="my-0 text-truncate">EUR €<i class="fa fa-angle-right ml-2" aria-hidden="true"></i>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <!-- Design -->
+          <div class="col-12">
+            <p class="text-white-50 mb-0 mt-4 text-uppercase"><small>Design</small></p>
+          </div>
+
+          <!-- <div class="col-12 bg-dark-light border-setting-top">
+            <a href="">
+              <div class="row align-items-center my-2">
+                <div class=" col-10 text-white text-truncate">
+                  <p class="my-0">App icon</p>
+                </div>
+                <div class="col-2 text-white-50 text-right">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </div>
+            </a>
+          </div> -->
+
+          <div class="col-12 bg-dark-light border-setting-top">
+            <a href="/setting_mySubscriptions_theme.html">
+              <div class="row align-items-center my-2">
+                <div class=" col-10 text-white text-truncate">
+                  <p class="my-0">Theme</p>
+                </div>
+                <div class="col-2 text-white-50 text-right">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 bg-dark-light border-setting-top border-setting-bottom">
+            <a href="setting_mySubscriptions_font.html">
+              <div class="row align-items-center my-2">
+                <div class=" col-10 text-white text-truncate">
+                  <p class="my-0">Fuente</p>
+                </div>
+                <div class="col-2 text-white-50 text-right">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Actualizaciones -->
+          <div class="col-12">
+            <p class="text-white-50 mb-0 mt-4 text-uppercase"><small>Actualizaciones</small></p>
+          </div>
+
+          <div class="col-12 bg-dark-light border-setting-top">
+            <a href="">
+              <div class="row align-items-center my-2">
+                <div class=" col-10 text-white text-truncate">
+                  <p class="my-0">Ver Actualizaciones</p>
+                </div>
+                <div class="col-2 text-white-50 text-right">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 bg-dark-light border-setting-top border-setting-bottom">
+            <a href="">
+              <div class="row align-items-center my-2">
+                <div class=" col-10 text-white text-truncate">
+                  <p class="my-0">Tema</p>
+                </div>
+                <div class="col-2 text-white-50 text-right">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <!-- Información -->
+          <div class="col-12">
+            <p class="text-white-50 mb-0 mt-4 text-uppercase"><small>Información</small></p>
+          </div>
+
+          <div class="col-12 bg-dark-light border-setting-top">
+            <a href="">
+              <div class="row align-items-center my-2">
+                <div class=" col-7 text-white text-truncate">
+                  <p class="my-0">Comentarios</p>
+                </div>
+                <div class="col-5 text-white-50 text-right">
+                  <p class="my-0 text-truncate">info@info.com<i class="fa fa-angle-right ml-2" aria-hidden="true"></i>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 bg-dark-light border-setting-top">
+            <a href="">
+              <div class="row align-items-center my-2">
+                <div class=" col-10 text-white text-truncate">
+                  <p class="my-0">Acerca de</p>
+                </div>
+                <div class="col-2 text-white-50 text-right">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 py-2 text-white border-setting-top border-setting-bottom text-truncate">
+            <a href="">
+              <p class="my-0 text-primary text-truncate">Califica a la App</p>
+            </a>
+          </div>
+
+          <div class="col-12 text-center mt-3">
+            <i class="fa fa-heart text-danger" aria-hidden="true" style="font-size: 3em;"></i>
+            <p><small>v 0.1</small></p>
+          </div>
+
         </div>
       </div>
     </section>
   </main>
+
+  <!-- Custom JavaScript -->
+  <script src="assets/js/setting.js"></script>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

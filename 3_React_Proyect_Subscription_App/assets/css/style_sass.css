@@ -1,11 +1,12 @@
+@import url(_variables.scss);
 .bg-dark {
   background-color: #000 !important;
 }
 
 body {
   background-color: black;
-  font-family: 'Open Sans';
-  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 ul {
@@ -24,6 +25,34 @@ ul {
   border: 0px;
   border-radius: 0px;
   border-bottom: 1px solid lightslategray;
+}
+
+/* Card Styles */
+#cardRow {
+  color: white;
+}
+
+#cardLogo {
+  font-size: 2em;
+}
+
+/* Setting Styles */
+.bg-dark-light {
+  background-color: #171717;
+}
+
+.border-setting-top {
+  border: 0px;
+  border-radius: 0px;
+  border-top: 1px solid lightslategray;
+}
+
+.border-setting-bottom {
+  border-bottom: 1px solid lightslategray;
+}
+
+.custom-control-imput {
+  right: 0px;
 }
 
 /*# sourceMappingURL=style_sass.css.map */

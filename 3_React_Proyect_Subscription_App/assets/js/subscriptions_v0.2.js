@@ -1,3 +1,19 @@
+// Guardo los elementos HTML donde voy a crear las listas de elementos. allSubsList, mySubsList, popSubsList.
+// Paso los parámetros junto con el parent por función (addSubWithPrice) y los implemento en el código HTML guardandolo en la variable newSubWithPrice. Verifico si existe el parent en el HTML , imprimo desde la función el HTML en el parent.
+// La función addSub hace los mismo implementando la búsqueda del error con Try & Catch
+//  function addSub(parent, var1, var2) {
+//    try {
+//      let newSub = `<html>${var1}</html>`;
+//      if (parent !== null) {
+//        parent.insertAdjacentHTML('beforeend', newSub);
+//      }
+//    } catch (error) {
+//    throw new Error('Atentí que no vino el parent');
+//  }
+
+// Me conecto a la Base de datos mediante API con GET, capturo los resultados en Data y los guardo en allSubscription.
+// Con un for invoco la función addSub pasandole el padre y sus parámetros. Utilizo un filtro if(active).
+
 const allSubsList = document.querySelector('#allSubscriptions');
 console.log(allSubsList);
 
@@ -6,10 +22,6 @@ console.log(mySubsList);
 
 const popSubsList = document.querySelector('#popularSubscriptions');
 console.log(popSubsList);
-
-// Paso 2: Leer Variables de la DB
-// Paso 3: Convinar 1 y 2 con 1 ejemplo
-// Paso 4: que salga el listado completo
 
 // Insert a subscription with price
 function addSubWithPrice(
@@ -55,7 +67,8 @@ function addSubWithPrice(
       </a>
     </li>
   `;
-  
+
+  // Verifico si existe el parent en el HTML
   if (parent !== null) {
     parent.insertAdjacentHTML('beforeend', newSubWithPrice);
   }
@@ -70,7 +83,9 @@ function addSub(parent, name, colorhexa, logoicon, active) {
           <div style="background-color:#${colorhexa}; border-radius: 0.2em;">
             <div class="row" style="color: white">
               <div class="col-2">
-                <i class="fa ${logoicon || 'fa-spotify'} m-2" style="font-size: 2em;"></i>
+                <i class="fa ${
+                  logoicon || 'fa-spotify'
+                } m-2" style="font-size: 2em;"></i>
               </div>
               <div class="col-6">
                 <div class="row">
@@ -80,7 +95,9 @@ function addSub(parent, name, colorhexa, logoicon, active) {
               <div class="col-4">
                 <div class="row">
                   <p class="text-right m-0" style="line-height: 45px;">
-                    <i class="fa ${ active ? 'fa-check' : 'fa-plus' }" aria-hidden="true"></i>
+                    <i class="fa ${
+                      active ? 'fa-check' : 'fa-plus'
+                    }" aria-hidden="true"></i>
                   </p>
                 </div>
               </div>
@@ -90,15 +107,15 @@ function addSub(parent, name, colorhexa, logoicon, active) {
       </li>
     `;
 
-    if (parent !== null) {     
-      parent.insertAdjacentHTML('beforeend', newSub);  
+    if (parent !== null) {
+      parent.insertAdjacentHTML('beforeend', newSub);
     }
   } catch (error) {
     throw new Error('Atentí que no vino el parent');
   }
-
 }
 
+// Consume API's
 fetch('assets/js/data.json')
   .then(function (response) {
     return response.json();
@@ -112,19 +129,15 @@ fetch('assets/js/data.json')
 
     for (let i = 0; i < 20; i++) {
       // Add ALL subsctiption
-        addSub(
-          allSubsList,
-          allSubscriptions[i].name,
-          allSubscriptions[i].colorhexa,
-          allSubscriptions[i].logoicon,
-          allSubscriptions[i].active
-        );
+      addSub(
+        allSubsList,
+        allSubscriptions[i].name,
+        allSubscriptions[i].colorhexa,
+        allSubscriptions[i].logoicon,
+        allSubscriptions[i].active
+      );
 
       // Add only ACTIVE subscription
-      /*
-        mySubsList !== null
-        Validar que el elemento HTML exista y ahí si insertarle el contenido
-      */ 
       if (activeSubscriptions[i].active) {
         addSubWithPrice(
           mySubsList,
@@ -149,8 +162,3 @@ fetch('assets/js/data.json')
       }
     }
   });
-
-
-// parent.insertAdjacentHTML('berofeend', allSubscriptions);
-// parent.insertAdjacentHTML('berofeend', activeSubscriptions);
-// parent.insertAdjacentHTML('berofeend', popSubscriptions);

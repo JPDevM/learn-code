@@ -1,9 +1,24 @@
+// Guardo el elemento HTML donde voy a crear la lista de elementos. productList.
+// Paso los parámetros junto con el parent por función (addSub) y los implemento en el código HTML guardandolo en la variable newSub. Imprimo desde la función el HTML en el parent.
+// function addSub(parent, var1, var2) {
+//   let newSub = `<html>${var1}</html>`;
+//   parent.insertAdjacentHTML('beforeend', newSub);
+// };
+
+// Me conecto a la Base de datos mediante API con GET, capturo los resultados en Data y los guardo en allSubscription.
+// fetch('assets/js/data.json')
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (data) {
+//     console.log(data);
+//     let allSubscriptions = data.subscriptions;
+//   });
+
+// Con un for invoco la función addSub pasandole el padre y sus parámetros. Utilizo un filtro if(active).
+
 const productsList = document.querySelector('#mySubscriptions');
 console.log(productsList);
-
-// Paso 2: Leer Variables de la DB
-// Paso 3: Convinar 1 y 2 con 1 ejemplo
-// Paso 4: que salga el listado completo
 
 // Insert una subscription
 function addSub(parent, name, colorhexa, logoicon, description, price, days) {
@@ -46,6 +61,7 @@ function addSub(parent, name, colorhexa, logoicon, description, price, days) {
   parent.insertAdjacentHTML('beforeend', newSub);
 }
 
+// Consume API's
 fetch('assets/js/data.json')
   .then(function (response) {
     return response.json();
@@ -68,29 +84,3 @@ fetch('assets/js/data.json')
       }
     }
   });
-
-// function addAllSubs ()
-// function addActiveSubs ()
-// function addInactiveSubs ()
-
-// Consumir API's
-// fetch('assets/js/data.json')
-//   .then(function (response) {
-//     return response.json();
-//   })
-//   .then(function (data) {
-//     console.log(data);
-//     let allSubscriptions = data.subscriptions;
-
-//     for (let i = 0; i < 20; i++) {
-//       addSub(
-//         productsList,
-//         allSubscriptions[i].name,
-//         allSubscriptions[i].colorhexa,
-//         allSubscriptions[i].logoicon,
-//         allSubscriptions[i].description,
-//         allSubscriptions[i].price,
-//         '2 días'
-//       );
-//     }
-//   });

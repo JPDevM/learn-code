@@ -1,63 +1,73 @@
-const allSubsList = document.querySelector('#allSubscriptions');
-console.log(allSubsList);
-
+// coments
 const mySubsList = document.querySelector('#mySubscriptions');
 console.log(mySubsList);
 
 const popSubsList = document.querySelector('#popularSubscriptions');
 console.log(popSubsList);
 
-// Paso 2: Leer Variables de la DB
-// Paso 3: Convinar 1 y 2 con 1 ejemplo
-// Paso 4: que salga el listado completo
+const allSubsList = document.querySelector('#allSubscriptions');
+console.log(allSubsList);
 
 // Insert a subscription with price
-function addSubWithPrice(
-  parent,
-  name,
-  colorhexa,
-  logoicon,
-  description,
-  price,
-  days
-) {
-  let newSubWithPrice = `
-    <li id="card" class="my-2">
-      <a href="">
-        <div style="background-color:#${colorhexa}; border-radius: 0.2em;">
-          <div class="row" style="color: white">
-            <div class="col-2">
-              <i class="fa ${
-                logoicon || 'fa-spotify'
-              } m-2" style="font-size: 2em;"></i>
-            </div>
-            <div class="col-6">
-              <div class="row">
-                <p class="m-0"><strong>${name}</strong></p>
+function addSubWithPrice(parent, data) {
+  try {
+    let newSubWithPrice = `
+      <li class="my-2">
+        <a id="cardUser" href="">
+          <div style="background-color:#${
+            data.colorhexa
+          }; border-radius: 0.2em;">
+            <div id="cardRow" class="row mx-0">
+            
+              <div class="col-2">
+                <i  id="cardLogo" 
+                    class="fa ${data.logoicon || 'fa-spotify'} my-2">
+                </i>
               </div>
-              <div class="row">
-                <p class="m-0"><small>${description || ''}</small>
-                </p>
+            
+              <div id="cardUserCenter" class="col-6">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="my-0 text-truncate">
+                      <strong>${data.name}</strong>
+                    </p>
+                  </div>
+                  <div class="col-12">
+                    <p class="my-0 text-truncate">
+                    <small>${data.description || ''}</small>
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-4">
-              <div class="row">
-                <p class="text-right m-0"><strong>${
-                  price || '0.00'
-                }€</strong></p>
+              
+              <div id="cardUserRight" class="col">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="text-right my-0 text-truncate">
+                      <strong>${data.price || '0.00'}€</strong>
+                    </p>
+                  </div>                  
+                  <div class="col-12">
+                    <p class="text-right my-0 text-truncate">${
+                      data.days || ''
+                    }</p>
+                  </div>
+                </div>
               </div>
-              <div class="row">
-                <p class="text-right m-0">${days}</p>
-              </div>
+            
             </div>
           </div>
-        </div>
-      </a>
-    </li>
+        </a>
+      </li>
   `;
-  
-  if (parent !== null) {
-    parent.insertAdjacentHTML('beforeend', newSubWithPrice);
+
+    if (parent !== null) {
+      parent.insertAdjacentHTML('beforeend', newSubWithPrice);
+    }
+  } catch (error) {
+    throw new Error(
+      'Does not load the parent. It may not be necessary in this HTML'
+    );
   }
 }
 
@@ -65,55 +75,69 @@ function addSubWithPrice(
 function addSub(parent, data) {
   try {
     let newSub = `
-      <li id="card" class="my-2">
-        <a href="">
-          <div style="background-color:#${data.colorhexa}; border-radius: 0.2em; padding: 0 15px;">
+      <li class="my-2">
+        <a id="cardDefault" href="">
+          <div style="background-color:#${
+            data.colorhexa
+          }; border-radius: 0.2em;">
+            <div id="cardRow" class="row mx-0 align-items-center">
 
-            <div class="row align-items-center" style="color: white">
-              <div class="col-3">
-                <i class="fa ${data.logoicon || 'fa-spotify'} my-2" style="font-size: 2em;"></i>
+              <div class="col-2">
+                <i id="cardLogo" class="fa ${
+                  data.logoicon || 'fa-spotify'
+                } my-2"></i>
               </div>
 
-              <div class="col-6">
-                <p class="m-0 text-truncate"><strong>${data.name}</strong></p>
+              <div id="cardDefaultCenter" class="col-7">
+                <p class="my-0 text-truncate"><strong>${data.name}</strong></p>
               </div>
 
-              <div class="col-3">
-                <p class="text-right m-0">
-                  <i class="fa ${ data.active ? 'fa-check' : 'fa-plus' }" aria-hidden="true"></i>
+              <div id="cardDefaultRight" class="col">
+                <p class="text-right my-0">
+                  <i class="fa ${
+                    data.active ? 'fa-check' : 'fa-plus'
+                  }" aria-hidden="true"></i>
                 </p>
               </div>
-            </div>
 
+            </div>
           </div>
         </a>
       </li>
     `;
 
-    if (parent !== null) {     
-      parent.insertAdjacentHTML('beforeend', newSub);  
+    if (parent !== null) {
+      parent.insertAdjacentHTML('beforeend', newSub);
     }
   } catch (error) {
-    throw new Error('Atentí que no vino el parent');
+    throw new Error(
+      'Does not load the parent. It may not be necessary in this HTML'
+    );
   }
-
 }
 
+// Consume API's
 fetch('assets/js/data.json')
   .then(function (response) {
     return response.json();
   })
   .then(function (data) {
-    let allSubscriptionsData = data.subscriptions;
     let activeSubscriptions = data.subscriptions;
     let popSubscriptions = data.subscriptions;
-
-    console.log(allSubscriptionsData);
+    let allSubscriptionsData = data.subscriptions;
+    // console.log(allSubscriptionsData);
 
     for (let i = 0; i < allSubscriptionsData.length; i++) {
+      // Add ACTIVE subscription
+      if (activeSubscriptions[i].active) {
+        addSubWithPrice(mySubsList, activeSubscriptions[i]);
+      }
+
+      // Add POPULAR subscriptions
+      if (popSubscriptions[i].popular) {
+        addSub(popSubsList, popSubscriptions[i]);
+      }
       // Add ALL subsctiption
-        addSub(allSubsList, allSubscriptionsData[i]);
+      addSub(allSubsList, allSubscriptionsData[i]);
     }
-
   });
-
