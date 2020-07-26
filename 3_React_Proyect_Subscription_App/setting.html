@@ -24,7 +24,7 @@
   <title>Subscription App</title>
 </head>
 
-<body>
+<body style="font-family: 'Open Sans', sans-serif;">
   <header>
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand text-white-50" href="/index.html">
@@ -45,12 +45,12 @@
         <div class="row">
 
 
-          <!-- General -->
-          <div class="col-12">
+          <!-- General >>> Dysplay: None-->
+          <div class="col-12 d-none">
             <p class="text-white-50 mb-0 mt-4 text-uppercase"><small>General</small></p>
           </div>
 
-          <!-- <div class="col-12 bg-dark-light border-setting-top">
+          <div class="col-12 bg-dark-light border-setting-top d-none">
             <a href="">
               <div class="row align-items-center my-2">
                 <div class=" col-10 text-white text-truncate">
@@ -61,9 +61,9 @@
                 </div>
               </div>
             </a>
-          </div> -->
+          </div>
 
-          <div class="col-12 bg-dark-light border-setting-top">
+          <div class="col-12 bg-dark-light border-setting-top d-none">
             <form>
               <div class="form-check my-2 px-0 text-white">
                 <input class="form-check-input custom-control-imput" type="checkbox" value="" id="defaultCheck1">
@@ -74,13 +74,13 @@
             </form>
           </div>
 
-          <div class="col-12 py-2 text-white border-setting-top text-truncate">
+          <div class="col-12 py-2 text-white border-setting-top text-truncate d-none">
             <a href="">
               <p class="my-0 text-primary text-truncate">Sync to iCloud now</p>
             </a>
           </div>
 
-          <div class="col-12 py-2 text-white border-setting-top text-truncate">
+          <div class="col-12 py-2 text-white border-setting-top text-truncate d-none">
             <p class="my-0 text-white-50 text-truncate">
               <small>Last synchronization on July 17, 2020 at 3:07 p.m.</small>
             </p>
@@ -99,7 +99,7 @@
                   <p class="my-0">Sort Subscriptions by</p>
                 </div>
                 <div class="col-5 text-white-50 text-right">
-                  <p class="my-0 text-truncate">Fecha de Pago<i class="fa fa-angle-right ml-2" aria-hidden="true"></i>
+                  <p class="my-0 text-truncate">Payment Date<i class="fa fa-angle-right ml-2" aria-hidden="true"></i>
                   </p>
                 </div>
               </div>
@@ -125,7 +125,7 @@
             <a href="/setting_mySubscriptions_currency.html">
               <div class="row align-items-center my-2">
                 <div class=" col-7 text-white text-truncate">
-                  <p class="my-0">Moneda Predeteminada</p>
+                  <p class="my-0">Default Currency</p>
                 </div>
                 <div class="col-5 text-white-50 text-right">
                   <p class="my-0 text-truncate">EUR €<i class="fa fa-angle-right ml-2" aria-hidden="true"></i>
@@ -141,7 +141,7 @@
             <p class="text-white-50 mb-0 mt-4 text-uppercase"><small>Design</small></p>
           </div>
 
-          <!-- <div class="col-12 bg-dark-light border-setting-top">
+          <div class="col-12 bg-dark-light border-setting-top d-none">
             <a href="">
               <div class="row align-items-center my-2">
                 <div class=" col-10 text-white text-truncate">
@@ -152,7 +152,7 @@
                 </div>
               </div>
             </a>
-          </div> -->
+          </div>
 
           <div class="col-12 bg-dark-light border-setting-top">
             <a href="/setting_mySubscriptions_theme.html">
@@ -171,7 +171,7 @@
             <a href="setting_mySubscriptions_font.html">
               <div class="row align-items-center my-2">
                 <div class=" col-10 text-white text-truncate">
-                  <p class="my-0">Fuente</p>
+                  <p class="my-0">Font</p>
                 </div>
                 <div class="col-2 text-white-50 text-right">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -182,14 +182,14 @@
 
           <!-- Actualizaciones -->
           <div class="col-12">
-            <p class="text-white-50 mb-0 mt-4 text-uppercase"><small>Actualizaciones</small></p>
+            <p class="text-white-50 mb-0 mt-4 text-uppercase"><small>Updates</small></p>
           </div>
 
-          <div class="col-12 bg-dark-light border-setting-top">
+          <div class="col-12 bg-dark-light border-setting-top border-setting-bottom">
             <a href="">
               <div class="row align-items-center my-2">
                 <div class=" col-10 text-white text-truncate">
-                  <p class="my-0">Ver Actualizaciones</p>
+                  <p class="my-0">See Updates</p>
                 </div>
                 <div class="col-2 text-white-50 text-right">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -198,11 +198,11 @@
             </a>
           </div>
 
-          <div class="col-12 bg-dark-light border-setting-top border-setting-bottom">
+          <div class="col-12 bg-dark-light border-setting-top d-none">
             <a href="">
               <div class="row align-items-center my-2">
                 <div class=" col-10 text-white text-truncate">
-                  <p class="my-0">Tema</p>
+                  <p class="my-0">Restore Purchases</p>
                 </div>
                 <div class="col-2 text-white-50 text-right">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -214,14 +214,14 @@
 
           <!-- Información -->
           <div class="col-12">
-            <p class="text-white-50 mb-0 mt-4 text-uppercase"><small>Información</small></p>
+            <p class="text-white-50 mb-0 mt-4 text-uppercase"><small>Information</small></p>
           </div>
 
           <div class="col-12 bg-dark-light border-setting-top">
             <a href="">
               <div class="row align-items-center my-2">
                 <div class=" col-7 text-white text-truncate">
-                  <p class="my-0">Comentarios</p>
+                  <p class="my-0">Comments</p>
                 </div>
                 <div class="col-5 text-white-50 text-right">
                   <p class="my-0 text-truncate">info@info.com<i class="fa fa-angle-right ml-2" aria-hidden="true"></i>
@@ -235,7 +235,7 @@
             <a href="">
               <div class="row align-items-center my-2">
                 <div class=" col-10 text-white text-truncate">
-                  <p class="my-0">Acerca de</p>
+                  <p class="my-0">About</p>
                 </div>
                 <div class="col-2 text-white-50 text-right">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -246,7 +246,7 @@
 
           <div class="col-12 py-2 text-white border-setting-top border-setting-bottom text-truncate">
             <a href="">
-              <p class="my-0 text-primary text-truncate">Califica a la App</p>
+              <p class="my-0 text-primary text-truncate">Rate the app</p>
             </a>
           </div>
 

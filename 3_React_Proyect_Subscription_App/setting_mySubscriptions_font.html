@@ -24,7 +24,7 @@
   <title>Subscription App</title>
 </head>
 
-<body style="font-family: $fontAvenir">
+<body style="font-family: 'Open Sans', sans-serif;">
   <header>
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand text-white-50" href="/setting.html">
@@ -49,82 +49,75 @@
             <p class="text-white-50 mb-0 mt-4 text-uppercase"><small>Fonts</small></p>
           </div>
 
-          <div class="col-12 bg-dark-light border-setting-top">
-            <a href="">
-              <div class="row align-items-center my-2">
-                <div class=" col-10 text-white text-truncate">
-                  <p class="my-0">San Francisco</p>
-                </div>
-                <div class="col-2 text-orange text-right">
-                  <i class="fa fa-check text-success d-block" aria-hidden="true"></i>
-                </div>
+          <div id="fontOpenSans" onclick="fontEdit(fontOpenSans, 'Open Sans')"
+            class="col-12 bg-dark-light border-setting-top">
+            <div class="row align-items-center my-2">
+              <div class="col-10 text-white text-truncate">
+                <p class="my-0">Open Sans</p>
               </div>
-            </a>
+              <div class="col-2 text-orange text-right">
+                <i class="fa fa-check text-success d-block" aria-hidden="true"></i>
+              </div>
+            </div>
           </div>
 
-          <div class="col-12 bg-dark-light border-setting-top">
-            <a href="">
-              <div class="row align-items-center my-2">
-                <div class=" col-10 text-white text-truncate">
-                  <p class="my-0">Avenir</p>
-                </div>
-                <div class="col-2 text-orange text-right">
-                  <i class="fa fa-check text-success d-none" aria-hidden="true"></i>
-                </div>
+          <div id="fontDancingScript" onclick="fontEdit(fontDancingScript, 'Dancing Script')"
+            class="col-12 bg-dark-light border-setting-top">
+            <div class="row align-items-center my-2">
+              <div class="col-10 text-white text-truncate">
+                <p class="my-0">Dancing Script</p>
               </div>
-            </a>
+              <div class="col-2 text-orange text-right">
+                <i class="fa fa-check text-success d-none" aria-hidden="true"></i>
+              </div>
+            </div>
           </div>
 
-          <div class="col-12 bg-dark-light border-setting-top">
-            <a href="">
-              <div class="row align-items-center my-2">
-                <div class=" col-10 text-white text-truncate">
-                  <p class="my-0">Helvetica</p>
-                </div>
-                <div class="col-2 text-orange text-right">
-                  <i class="fa fa-check text-success d-none" aria-hidden="true"></i>
-                </div>
+          <div id="fontIndieFlower" onclick="fontEdit(fontIndieFlower, 'Indie Flower')"
+            class="col-12 bg-dark-light border-setting-top">
+            <div class="row align-items-center my-2">
+              <div class="col-10 text-white text-truncate">
+                <p class="my-0">Indie Flower</p>
               </div>
-            </a>
+              <div class="col-2 text-orange text-right">
+                <i class="fa fa-check text-success d-none" aria-hidden="true"></i>
+              </div>
+            </div>
           </div>
 
-          <div class="col-12 bg-dark-light border-setting-top">
-            <a href="">
-              <div class="row align-items-center my-2">
-                <div class=" col-10 text-white text-truncate">
-                  <p class="my-0">Courier</p>
-                </div>
-                <div class="col-2 text-orange text-right">
-                  <i class="fa fa-check text-success d-none" aria-hidden="true"></i>
-                </div>
+          <div id="fontNunito" onclick="fontEdit(fontNunito, 'Nunito')" class="col-12 bg-dark-light border-setting-top">
+            <div class="row align-items-center my-2">
+              <div class="col-10 text-white text-truncate">
+                <p class="my-0">Nunito</p>
               </div>
-            </a>
+              <div class="col-2 text-orange text-right">
+                <i class="fa fa-check text-success d-none" aria-hidden="true"></i>
+              </div>
+            </div>
           </div>
 
-          <div class="col-12 bg-dark-light border-setting-top">
-            <a href="">
-              <div class="row align-items-center my-2">
-                <div class=" col-10 text-white text-truncate">
-                  <p class="my-0">Gill Sans</p>
-                </div>
-                <div class="col-2 text-orange text-right">
-                  <i class="fa fa-check text-success d-none" aria-hidden="true"></i>
-                </div>
+          <div id="fontRaleway" onclick="fontEdit(fontRaleway, 'Raleway')"
+            class="col-12 bg-dark-light border-setting-top">
+            <div class="row align-items-center my-2">
+              <div class="col-10 text-white text-truncate">
+                <p class="my-0">Raleway</p>
               </div>
-            </a>
+              <div class="col-2 text-orange text-right">
+                <i class="fa fa-check text-success d-none" aria-hidden="true"></i>
+              </div>
+            </div>
           </div>
 
-          <div class="col-12 bg-dark-light border-setting-top border-setting-bottom">
-            <a href="">
-              <div class="row align-items-center my-2">
-                <div class=" col-10 text-white text-truncate">
-                  <p class="my-0">San Francisco Rounded</p>
-                </div>
-                <div class="col-2 text-orange text-right">
-                  <i class="fa fa-check text-success d-none" aria-hidden="true"></i>
-                </div>
+          <div id="fontRobotoMono" onclick="fontEdit(fontRobotoMono, 'Roboto Mono')"
+            class="col-12 bg-dark-light border-setting-top border-setting-bottom">
+            <div class="row align-items-center my-2">
+              <div class="col-10 text-white text-truncate">
+                <p class="my-0">Roboto Mono</p>
               </div>
-            </a>
+              <div class="col-2 text-orange text-right">
+                <i class="fa fa-check text-success d-none" aria-hidden="true"></i>
+              </div>
+            </div>
           </div>
 
           <!-- Preview -->
@@ -135,7 +128,7 @@
           <div class="col-12">
             <div class="row px-3">
 
-              <div class="col-12 border border-dark rounded pb-2">
+              <div id="divPreview" class="col-12 border border-dark rounded pb-2">
                 <nav class="navbar navbar-dark bg-dark text-white p-0">
                   <small>
                     <i class="fa fa-circle" aria-hidden="true"></i>
@@ -152,7 +145,8 @@
                   </small>
                 </nav>
 
-                <nav class="navbar navbar-dark bg-dark">
+                <nav id="previewMenu" class="navbar navbar-dark bg-dark"
+                  style="font-family: 'Dancing Script', cursive;">
                   <a class="navbar-brand text-white-50" href="/setting.html">
                     <i class="fa fa-cog" aria-hidden="true"></i>
                   </a>
@@ -164,7 +158,7 @@
                 </nav>
 
                 <!-- Card -->
-                <div style="background-color:blue; border-radius: 0.2em;">
+                <div id="previewCard" style="font-family: 'Dancing Script', cursive;">
                   <div id="cardRow" class="row mx-0">
 
                     <div class="col-2">

@@ -30,4 +30,9 @@ Coming soon:
 
 Questions:
 
-- Diferencia entre px em etc y cuanDo usarlos
+- Diferencia entre px em etc y cuanDo usarlos.
+- API para conversiones de divisas.
+-
+
+Repaso.
+Pág 159 Student

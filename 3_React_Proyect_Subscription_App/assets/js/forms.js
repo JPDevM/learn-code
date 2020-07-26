@@ -16,15 +16,15 @@
 	Como la anterior manera genera que se pisen los eventos. La mejor forma de aplicar los mismos será con un método llamado .addEventListener(STRING: eventName, FN: callback)
 */
 
-let btn01 = document.querySelector('#btn01');
+// let btn01 = document.querySelector('#btn01');
 
-btn01.addEventListener('click', function () {
-  console.log('Hiciste click');
-});
+// btn01.addEventListener('click', function () {
+//   console.log('Hiciste click');
+// });
 
-btn01.addEventListener('click', function () {
-  console.log('¡Este es otro evento click!');
-});
+// btn01.addEventListener('click', function () {
+//   console.log('¡Este es otro evento click!');
+// });
 
 let divPrueba = document.querySelector('#divPrueba');
 

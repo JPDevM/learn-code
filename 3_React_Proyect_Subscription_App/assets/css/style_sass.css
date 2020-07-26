@@ -4,7 +4,7 @@
 
 body {
   background-color: black;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 
@@ -23,7 +23,21 @@ ul {
   color: white;
   border: 0px;
   border-radius: 0px;
-  border-bottom: 1px solid lightslategray;
+}
+.input-dark:focus {
+  background-color: black;
+  color: white;
+}
+
+.input-dark-strong {
+  background-color: black;
+  color: grey;
+  border: 0px;
+  border-radius: 0px;
+}
+.input-dark-strong:focus {
+  background-color: black;
+  color: white;
 }
 
 /* Card Styles */
@@ -52,6 +66,54 @@ ul {
 
 .custom-control-imput {
   right: 0px;
+}
+
+#previewCard {
+  background-color: blue;
+  border-radius: 0.2em;
+}
+
+/* Form Custom Cards */
+#addCustomSubscriptionForm #valueNewSub {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.form-group span {
+  color: white;
+}
+
+#btnSelect {
+  color: blue;
+}
+
+#btnSelect span {
+  color: red;
+}
+
+#fontOpenSans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#fontDancingScript {
+  font-family: 'Dancing Script', cursive;
+}
+
+#fontIndieFlower {
+  font-family: 'Indie Flower', cursive;
+}
+
+#fontNunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+#fontRaleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+#fontRobotoMono {
+  font-family: 'Roboto Mono', monospace;
 }
 
 /*# sourceMappingURL=style_sass.css.map */
