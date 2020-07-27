@@ -1,17 +1,14 @@
 // Vamos a elegir la tipografía del documento
 // setting_mySubscriptions_font.html
 
-let divBody = document.querySelector('body'); // console.log(divBody);
+let divBody = document.querySelector('body');
 
 function fontEdit(idFont, newFont) {
-  // console.log('este el el idFont: ', idFont);
-  // console.log('este es el newFont: ', newFont);
+  let previewCard = document.querySelector('#previewCard');
+  let previewMenu = document.querySelector('#previewMenu');
 
-  let previewCard = document.querySelector('#previewCard'); // console.log(previewCard);
-  let previewMenu = document.querySelector('#previewMenu'); // console.log(previewMenu);
-
-  const dNone = idFont.querySelector('.d-none'); // console.log(dNone);
-  let divSelected = divBody.querySelector('.d-block'); // console.log(divSelected);
+  const dNone = idFont.querySelector('.d-none');
+  let divSelected = divBody.querySelector('.d-block');
 
   // Mostrar el tilde actual
   dNone.className += ' d-block';
