@@ -41,7 +41,7 @@
 
   <main>
     <section class="my-2">
-      <div class="container-fluid">
+      <div class="container-fluid" id="containerFonts">
         <div class="row">
 
           <!-- Fonts -->
@@ -49,8 +49,7 @@
             <p class="text-white-50 mb-0 mt-4 text-uppercase"><small>Fonts</small></p>
           </div>
 
-          <div id="fontOpenSans" onclick="fontEdit(fontOpenSans, 'Open Sans')"
-            class="col-12 bg-dark-light border-setting-top">
+          <div id="fontOpenSans" class="col-12 bg-dark-light border-setting-top" data-font="Open Sans">
             <div class="row align-items-center my-2">
               <div class="col-10 text-white text-truncate">
                 <p class="my-0">Open Sans</p>
@@ -61,8 +60,7 @@
             </div>
           </div>
 
-          <div id="fontDancingScript" onclick="fontEdit(fontDancingScript, 'Dancing Script')"
-            class="col-12 bg-dark-light border-setting-top">
+          <div id="fontDancingScript" class="col-12 bg-dark-light border-setting-top" data-font="Dancing Script">
             <div class="row align-items-center my-2">
               <div class="col-10 text-white text-truncate">
                 <p class="my-0">Dancing Script</p>
@@ -73,8 +71,7 @@
             </div>
           </div>
 
-          <div id="fontIndieFlower" onclick="fontEdit(fontIndieFlower, 'Indie Flower')"
-            class="col-12 bg-dark-light border-setting-top">
+          <div id="fontIndieFlower" class="col-12 bg-dark-light border-setting-top">
             <div class="row align-items-center my-2">
               <div class="col-10 text-white text-truncate">
                 <p class="my-0">Indie Flower</p>
@@ -85,7 +82,7 @@
             </div>
           </div>
 
-          <div id="fontNunito" onclick="fontEdit(fontNunito, 'Nunito')" class="col-12 bg-dark-light border-setting-top">
+          <div id="fontNunito" class="col-12 bg-dark-light border-setting-top">
             <div class="row align-items-center my-2">
               <div class="col-10 text-white text-truncate">
                 <p class="my-0">Nunito</p>
@@ -96,7 +93,7 @@
             </div>
           </div>
 
-          <div id="fontRaleway" onclick="fontEdit(fontRaleway, 'Raleway')"
+          <div id="fontRaleway" 
             class="col-12 bg-dark-light border-setting-top">
             <div class="row align-items-center my-2">
               <div class="col-10 text-white text-truncate">
@@ -108,7 +105,7 @@
             </div>
           </div>
 
-          <div id="fontRobotoMono" onclick="fontEdit(fontRobotoMono, 'Roboto Mono')"
+          <div id="fontRobotoMono"
             class="col-12 bg-dark-light border-setting-top border-setting-bottom">
             <div class="row align-items-center my-2">
               <div class="col-10 text-white text-truncate">
@@ -202,7 +199,6 @@
 
             </div>
           </div>
-
         </div>
       </div>
     </section>

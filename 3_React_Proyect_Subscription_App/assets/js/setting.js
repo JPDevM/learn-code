@@ -3,22 +3,35 @@
 
 let divBody = document.querySelector('body');
 
-function fontEdit(idFont, newFont) {
-  let previewCard = document.querySelector('#previewCard');
-  let previewMenu = document.querySelector('#previewMenu');
+let containerFonts = document.querySelector('#containerFonts');
 
-  const dNone = idFont.querySelector('.d-none');
-  let divSelected = divBody.querySelector('.d-block');
+let fontsDivs = Array.from(containerFonts.querySelectorAll('div[id^=font]'));
 
-  // Mostrar el tilde actual
-  dNone.className += ' d-block';
-  dNone.classList.remove('d-none');
+let allCheckIcons = Array.from(containerFonts.querySelectorAll('.fa-check'))
+;
 
-  // Borrar el tilde anterior
-  divSelected.classList.remove('d-block');
-  divSelected.className += ' d-none';
+let previewCard = document.querySelector('#previewCard');
+let previewMenu = document.querySelector('#previewMenu');
+
+function fontEdit(event) {
+  let parent = event.currentTarget;
+  let checkIcon = parent.querySelector('.fa-check');
+  let newFont = parent.dataset.font;
+
+  allCheckIcons.forEach(function (oneCheckIcon) {
+    oneCheckIcon.classList.remove('d-block');
+    oneCheckIcon.classList.add('d-none');
+  })
+
+  if (!checkIcon.classList.contains('d-block')) {
+    checkIcon.classList.add('d-block');
+  } 
 
   // Cambiar la font de la preview.
   previewMenu.style.fontFamily = newFont;
   previewCard.style.fontFamily = newFont;
 }
+
+fontsDivs.forEach(function (oneDiv) {
+  oneDiv.addEventListener('click', fontEdit)
+})
