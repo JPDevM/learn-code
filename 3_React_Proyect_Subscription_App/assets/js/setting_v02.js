@@ -1,20 +1,20 @@
-// Vamos a elegir la tipografía del documento.
-
-// To-do: Cargar los elementos desde una array de fuentes.
-
+// Vamos a elegir la tipografía del documento
 // setting_mySubscriptions_font.html
 
 let divBody = document.querySelector('body');
 let containerFonts = document.querySelector('#containerFonts');
-let fontsDivs = Array.from(containerFonts.querySelectorAll('div[id^=font]'));
+let fontsDivs = Array.from(containerFonts.querySelectorAll('div[id^=font]')); // 'div[id^=font]' todos los id que comienzan(^) en font
 let allCheckIcons = Array.from(containerFonts.querySelectorAll('.fa-check'));
 let previewCard = document.querySelector('#previewCard');
 let previewMenu = document.querySelector('#previewMenu');
 
 function fontEdit(event) {
-  let parent = event.currentTarget;
+  // event es el nombre de la variable que espera el evento click del addEventListener.
+  // MouseEvent {isTrusted: true, screenX: 453, screenY: 280, …}
+  let parent = event.currentTarget; // currenTarget Identifica el target (objetivo) actual del evento.
+  // <div id="fontDancingScript" data-font="Dancing Script">
   let checkIcon = parent.querySelector('.fa-check');
-  let newFont = parent.dataset.font;
+  let newFont = parent.dataset.font; // La propiedad dataset en HTMLElement proporciona una interfaz lectura/escritura para obtener todos los atributos de datos personalizados.
 
   // Recorremos el array de allCheckIcons y les cambiamos las clases.
   allCheckIcons.forEach(function (oneCheckIcon) {
@@ -22,7 +22,7 @@ function fontEdit(event) {
     oneCheckIcon.classList.add('d-none');
   });
 
-  // Mostramos el check al clickeado.
+  // Agregamos el check al seleccionado.
   if (!checkIcon.classList.contains('d-block')) {
     checkIcon.classList.add('d-block');
   }
