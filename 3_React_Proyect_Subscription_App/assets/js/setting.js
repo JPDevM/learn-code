@@ -1,35 +1,17 @@
-// Vamos a elegir la tipografía del documento
-// setting_mySubscriptions_font.html
+// Este Javascript administra la carga de los demás javascript
+var pathname = window.location.pathname;
 
-let divBody = document.querySelector('body');
+// SET Fonts
+let arrSettings = [
+  { pathname: '/setting_fonts.js', location: '/setting_fonts.html' },
+];
 
-let containerFonts = document.querySelector('#containerFonts');
-
-let fontsDivs = Array.from(containerFonts.querySelectorAll('div[id^=font]'));
-
-let allCheckIcons = Array.from(containerFonts.querySelectorAll('.fa-check'))
-;
-
-let previewCard = document.querySelector('#previewCard');
-let previewMenu = document.querySelector('#previewMenu');
-
-function fontEdit(event) {
-  let parent = event.currentTarget;
-  let checkIcon = parent.querySelector('.fa-check');
-  let newFont = parent.dataset.font;
-
-  allCheckIcons.forEach(function (oneCheckIcon) {
-    oneCheckIcon.classList.remove('d-block');
-    oneCheckIcon.classList.add('d-none');
-  })
-
-  if (!checkIcon.classList.contains('d-block')) {
-    checkIcon.classList.add('d-block');
-  } 
-
-  // Cambiar la font de la preview.
-  previewMenu.style.fontFamily = newFont;
-  previewCard.style.fontFamily = newFont;
+function addJS(arrSettings) {
+  let newJS = `
+    <!-- Custom JavaScript -->
+    <script src="assets/js${arrSettings.pathname}"></script>
+    `;
+  body.insertAdjacentHTML('beforeend', newJS);
 }
 
 fontsDivs.forEach(function (oneDiv) {

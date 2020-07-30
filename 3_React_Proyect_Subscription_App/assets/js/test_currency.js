@@ -1,9 +1,5 @@
 const currencyTable = document.querySelector('#currencyTable');
-//console.log(currencyTable);
-
-// Problem 1
 const result1 = document.querySelector('#eje1');
-// console.log(result1);
 
 // Consume API's
 fetch('assets/js/currency.json')
@@ -11,15 +7,14 @@ fetch('assets/js/currency.json')
     return response.json();
   })
   .then(function (data) {
-    let allCurrencies = data.pop();
-
-    let actualizationDate = allCurrencies.Date;
-
-    delete allCurrencies.Date;
+    let allCurrencies = data.pop(); // La DB viene con solo un valor, lo extraigo. push() y pop() nos permiten agregar y eliminar al final del Array, mientras que unshift() y shift() lo hacen al inicio.
+    let actualizationDate = allCurrencies.Date; // Extraigo la fecha
+    delete allCurrencies.Date; // La borro del array
 
     for (let currency in allCurrencies) {
-      // Add ALL Currencys for table
-      
+      // for in. Se usa para recorrer objetos literales
+
+      // Guardo las variables en un nuevo objeto
       let finalData = {
         code: currency,
         value: allCurrencies[currency],
@@ -30,11 +25,10 @@ fetch('assets/js/currency.json')
 
       // Add ALL Currencys for eje1 & eje2
       problem1(result1, finalData);
-      // problem2(eje2, allCurrencies[i]);
     }
   });
 
-// Insert a values of currency.json
+// Insert a values of currency.json in a table
 function addCurrency(parent, data) {
   try {
     let newCurrency = `
@@ -56,6 +50,7 @@ function addCurrency(parent, data) {
   }
 }
 
+// Problem 1
 function problem1(parent, data) {
   try {
     let resultado1 = `<p class="text-warning">resultado 1 - ${data.code}</p>`;
@@ -70,17 +65,19 @@ function problem1(parent, data) {
   }
 }
 
-/*
+/* For of: recorre un array.
 let colors = ['Yellow', 'Black', 'Pink', 'Blue'];
+
+for (const oneColor of colors) {
+  console.log(oneColor);
+}
+
+For in: recorre un objetos literal.
 let car = {
   brand: 'Renault',
   model: 'Megane',
   year: 2020,
 };
-
-for (const oneColor of colors) {
-  console.log(oneColor);
-}
 
 for (const prop in car) {
   console.log(`My car: ${prop} - ${car[prop]}`);

@@ -1,5 +1,5 @@
 // Vamos a elegir la tipografía del documento
-// setting_mySubscriptions_font.html
+// setting_font.html
 
 let divBody = document.querySelector('body');
 
