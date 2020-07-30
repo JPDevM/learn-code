@@ -33,5 +33,5 @@ function fontEdit(event) {
 }
 
 fontsDivs.forEach(function (oneDiv) {
-  oneDiv.addEventListener('click', fontEdit)
+  oneDiv.addEventListener('click', fontEdit);
 })
