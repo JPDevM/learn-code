@@ -11,4 +11,4 @@ const saludarMascota = function (mascota: Animal) {
 }
 
 console.log( saludarMascota('perro') );
-console.log( saludarMascota('vaca') );
+console.log( saludarMascota('gato') );

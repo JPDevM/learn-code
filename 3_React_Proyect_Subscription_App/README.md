@@ -11,9 +11,9 @@ A Mobile application in the App Store developed with React Native.
 The first approach to Rect will be in a web environment. Implementing FrontEnd technologies. Bootstrap, Sass and of course React.
 
 - [x] Create a database in Json
-- [ ] Create the frontend in HTML mobile first whith Bootstrap & Sass.
+- [x] Create the frontend in HTML mobile first whith Bootstrap & Sass.
 - [ ] Use native JavaScript for a frontend and backend with Promise API.
-- [ ] Use native Javascript to create or edit values in the database.
+- [ ] Node.JS.
 - [ ] ...
 
 Coming soon:
@@ -21,7 +21,8 @@ Coming soon:
 - [x] Review the entire layout in Bootstrap.
 - [x] Javascript that invokes the cards.
 - [ ] Review the structure of form addCustom.html and complete it.
-- [ ] Review the structure of form setting.html and complete it.
+- [x] Review the structure of form setting.html and complete it.
+- [ ] Javascript in settings: Fonts, Currency, Order, View, Theme.
 - [ ] Javascript to edit cards in addCustom.html.
 - [ ] Javascript to save cards in addCustom.html.
 - [ ] Bring the values of setting.html from the database.
