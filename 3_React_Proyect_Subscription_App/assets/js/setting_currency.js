@@ -14,47 +14,71 @@ fetch('assets/js/currency.json')
     let actualizationDate = allCurrencies.Date;
     delete allCurrencies.Date;
 
+    let currenciesArray = [];
+
     for (let currency in allCurrencies) {
-      // Guardo las variables en un nuevo objeto
-      let crrncyId = 'crrncy';
-      crrncyId = crrncyId.concat(currency);
+      if (currency !== '') {
+        // Guardo las variables en un nuevo objeto
+        let crrncyId = 'crrncy';
+        crrncyId = crrncyId.concat(currency);
+  
+        let finalCurrency = {
+          code: currency,
+          id: crrncyId,
+          symbol: ' ',
+          value: allCurrencies[currency],
+          actualization: actualizationDate,
+          check: 'd-none',
+        };
 
-      arrCurrencys{
-        code: currency,
-        id: crrncyId,
-        symbol: '  ',
-        value: allCurrencies[currency],
-        actualization: actualizationDate,
-        check: 'd-none',
-      };
-
-      addCurrency(containerCurrencys, arrCurrencys[currency], currency);
+        currenciesArray.push(finalCurrency);
+      }
     }
+
+    // 1. Creamos el objeto del currency actual
+    let actualCurrency = {
+      code: 'EUR',
+      id: 'crrncyEUR',
+      symbol: '€',
+      value: 1,
+      actualization: actualizationDate,
+      check: 'd-none',
+    }
+
+    // 1.a. Insertamos el currency actual en el parent
+    addCurrency(containerCurrencys, actualCurrency, 'afterbegin');
+
+    // 2. Insertamos el <h1>
+    containerCurrencys.insertAdjacentHTML('afterbegin', `<h4 style="color:salmon">Tenemos ${currenciesArray.length} monedas</h4>`);
+
+    // 3. En el parent insertamos el resto de currencies
+    currenciesArray.forEach(function (oneCurrency) {
+      addCurrency(containerCurrencys, oneCurrency, 'beforeend');
+    });
   });
 
-function addCurrency(parent, arrCurrencys, count) {
-  console.log(arrCurrencys[count]);
-  // try {
-  //   let newCurrency = `
-  //                   <div id="${arrCurrencys.id}" class="col-12 bg-dark-light border-setting-top">
-  //                       <div class="row align-items-center my-2">
-  //                         <div class=" col-10 text-white text-truncate">
-  //                           <p class="my-0">${arrCurrencys.code} (${arrCurrencys.symbol})</p>
-  //                         </div>
-  //                         <div class="col-2 text-orange text-right">
-  //                           <i class="fa fa-check text-success ${arrCurrencys.check}" aria-hidden="true"></i>
-  //                         </div>
-  //                       </div>
-  //                   </div>
-  //                  `;
-  //   if (parent !== null) {
-  //     parent.insertAdjacentHTML('beforeend', newCurrency);
-  //   }
-  // } catch (error) {
-  //   throw new Error(
-  //     'Does not load the parent. It may not be necessary in this HTML'
-  //   );
-  // }
+function addCurrency(parent, currency, insertPlace) {
+  try {
+    let newCurrency = `
+      <div id="${currency.id}" class="col-12 bg-dark-light border-setting-top">
+          <div class="row align-items-center my-2">
+            <div class=" col-10 text-white text-truncate">
+              <p class="my-0">${currency.code} (${currency.symbol}) - ${currency.value}</p>
+            </div>
+            <div class="col-2 text-orange text-right">
+              <i class="fa fa-check text-success ${currency.check}" aria-hidden="true"></i>
+            </div>
+          </div>
+      </div>
+    `;
+    if (parent !== null) {
+      parent.insertAdjacentHTML(insertPlace, newCurrency);
+    }
+  } catch (error) {
+    throw new Error(
+      'Does not load the parent. It may not be necessary in this HTML'
+    );
+  }
 }
 
 // for (let currency in arrCurrencys) {
